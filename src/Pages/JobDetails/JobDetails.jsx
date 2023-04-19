@@ -5,8 +5,7 @@ import "./JobDetails.css"
 const JobDetails = () => {
   return (
      <>
-    
-
+        <button>Apply Now</button>
     
      </>
 
