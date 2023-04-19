@@ -1,0 +1,22 @@
+.jobpage_banner_div{
+
+    height:150px;
+    background-color: lightgray;
+    padding-left: 30px;  
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.jobpage_banner_heading{
+    
+    margin-bottom: 10px;
+}
+
+.jobpage_banner_div small{
+    color: rgb(90, 87, 87);
+}
+
+.jobpage_banner_logo{
+    height: 150px;
+}
