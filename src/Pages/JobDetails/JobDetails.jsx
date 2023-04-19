@@ -4,10 +4,11 @@ import "./JobDetails.css"
 
 const JobDetails = () => {
   return (
-     <>
-        <button>Apply Now</button>
-    
-     </>
+    <>
+      <button>Click Here</button>
+
+
+    </>
 
   )
 }
