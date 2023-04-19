@@ -1,8 +1,15 @@
 import React from 'react'
+import "./JobDetails.css"
+
 
 const JobDetails = () => {
   return (
-    <div>JobDetails</div>
+     <>
+    
+
+    
+     </>
+
   )
 }
 
