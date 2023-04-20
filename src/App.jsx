@@ -5,13 +5,18 @@ import "./app.css"
 import Home from './Pages/Home/Home'
 import JobDetails from './Pages/JobDetails/JobDetails'
 import { JobPage } from './Pages/JobPage/JobPage'
-
+import CustomCursor from './Component/CustomCursor';
 function App() {
   const [count, setCount] = useState(0)
 
   return (
 
-    <JobDetails />
+    <>
+    <CustomCursor />
+<JobPage/> 
+
+    </>
+            
   )
 }
 
