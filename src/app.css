@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body{
     padding: 0;
     margin: 0;
@@ -5,20 +7,12 @@ body{
 }
 
 *{
-    box-sizing: border-box;cursor: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
-.cursor {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 30px;
-    height: 30px;
-    background-image: url('./assets/try.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    pointer-events: none;
-    z-index: 99999;
-    
-  }
-  
+h1{
+    font-family: 'Open Sans', sans-serif !important;
+}
+

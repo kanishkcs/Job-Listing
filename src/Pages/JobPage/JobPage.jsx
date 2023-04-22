@@ -2,6 +2,7 @@ import React from "react";
 import "./jobPage.css";
 import Jobpage_banner from "./jobpage_banner.png";
 import SearchJob from "../../Component/SearchJob";
+
 export const JobPage = () => {
   return (
     <>

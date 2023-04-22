@@ -1,12 +1,27 @@
 import React from "react";
 import styled from "styled-components";
 
+
+
+
+// Images and Icons
+import SearchIcon from "../assets/search.png"
+import LocationIcon from "../assets/location.png"
+
+
+
+
 const Wrapper = styled.div`
 height:auto;
 width: 90vw;
 padding-left: 3vw;
-padding-right: 3vw;
+
 display: flexs;
+
+@media screen and (max-width: 768px){
+  padding: 4px;
+  width: 100vw;
+}
 `;
 
 const LeftContainer = styled.div`
@@ -14,6 +29,9 @@ const LeftContainer = styled.div`
 width: 17vw;
 height: 40vh;
 flex-basis: 30%;
+@media screen and (max-width: 768px){
+  display: none;
+}
 
 `;
 
@@ -33,11 +51,25 @@ const SearchDiv = styled.div`
   height: 40px;
   position: relative;
   flex-basis: 60px;
+  @media screen and (max-width: 768px){
+  width: 100%;
+  
+}
+
  
 `;
 
 const Input = styled.input`
   width: 90%;
+  padding-left: 40px;
+  border-radius: ${props=> props.$left ? "10px 0 0 10px":"0 10px 10px 0 "};
+  border: 1px solid lightgray;
+  font-size: 1rem;
+  
+  @media screen and (max-width: 768px){
+    font-size: 0.1rem;
+}
+
 `;
 
 const SerachButton = styled.button`
@@ -45,13 +77,52 @@ const SerachButton = styled.button`
   top: 50%;
   transform: translateY(-50%);
   right: 25px;
+  background-color: #009C4C;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px ;
+  width: 10%;
+  height: 35px;
+&:hover{
+  transform: scale(1.2);
+}
 
+  @media screen and (max-width: 768px){
+  top: 135%;
+  right: 35%;
+  width: 120px;
+  height: 35px;
+}
 `;
 
 
 const JobListDiv = styled.div`
 flex-grow:1;
 
+
+`
+
+const SearchIcons = styled.img`
+position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  left: 10px;
+  
+`
+const LocationIcons =styled.img`
+
+
+
+position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  right: 47%;
+  @media screen and (max-width: 768px){
+  right: 41%;
+}
 `
 
 const SearchJob = () => {
@@ -64,8 +135,11 @@ const SearchJob = () => {
 
         <RightContainer>
           <SearchDiv>
-            <Input placeholder="Search by Role" />
+            <Input $left placeholder="Search Job title or Role" />
+            <SearchIcons className="search_icon" src={SearchIcon}/>
+            <LocationIcons src={LocationIcon}/>
             <Input placeholder="Search By Country" />
+            
             <SerachButton>Search</SerachButton>
           </SearchDiv>
 
