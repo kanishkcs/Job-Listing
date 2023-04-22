@@ -13,22 +13,25 @@ import LocationIcon from "../assets/location.png"
 
 const Wrapper = styled.div`
 height:auto;
-width: 90vw;
+width: 100vw;
 padding-left: 3vw;
-
+margin-top: 40px;
 display: flexs;
 
 @media screen and (max-width: 768px){
   padding: 4px;
-  width: 100vw;
+
+  
+  margin-top: 10px;
 }
 `;
 
 const LeftContainer = styled.div`
-
-width: 17vw;
-height: 40vh;
-flex-basis: 30%;
+border: 1px solid lightgray;
+border-radius: 15px;
+height: 72vh;
+flex-basis: 19%;
+margin-right: 15px;
 @media screen and (max-width: 768px){
   display: none;
 }
@@ -44,6 +47,12 @@ flex-direction: column;
 
 `
 
+const NumberOfJobs = styled.h3`
+margin-top: 25px;
+padding-left: 5px;
+color:gray;
+`
+
 
 const SearchDiv = styled.div`
   display: flex;
@@ -53,6 +62,7 @@ const SearchDiv = styled.div`
   flex-basis: 60px;
   @media screen and (max-width: 768px){
   width: 100%;
+  height: 25px;
   
 }
 
@@ -145,7 +155,7 @@ const SearchJob = () => {
             
             <SerachButton>Search</SerachButton>
           </SearchDiv>
-
+            <NumberOfJobs>250 Jobs</NumberOfJobs>
           <JobListDiv>
 
           </JobListDiv>
