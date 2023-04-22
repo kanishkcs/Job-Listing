@@ -74,8 +74,8 @@ const Input = styled.input`
 
 const SerachButton = styled.button`
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 20%;
+ 
   right: 25px;
   background-color: #009C4C;
   color: white;
@@ -84,8 +84,11 @@ const SerachButton = styled.button`
   font-size: 14px ;
   width: 10%;
   height: 35px;
+  cursor: pointer;
 &:hover{
-  transform: scale(1.2);
+  
+  transform: scale(1.1);
+  
 }
 
   @media screen and (max-width: 768px){
