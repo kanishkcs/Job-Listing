@@ -133,6 +133,11 @@ const LocationIcons = styled.img`
 `;
 
 const SearchJob = () => {
+
+  const jobCards = [];
+  for (let i = 0; i < 250; i++) {
+    jobCards.push(<JobCard key={i} />);
+  }
   return (
     <>
       <Wrapper>
@@ -149,14 +154,7 @@ const SearchJob = () => {
           </SearchDiv>
           <NumberOfJobs>250 Jobs results</NumberOfJobs>
           <JobListDiv>
-            <JobCard />
-            <JobCard />
-            <JobCard />
-            <JobCard />
-            <JobCard />
-            <JobCard />
-            <JobCard />
-            <JobCard />
+            {jobCards}
           </JobListDiv>
         </RightContainer>
       </Wrapper>
