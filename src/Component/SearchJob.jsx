@@ -35,6 +35,9 @@ const RightContainer = styled.div`
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  
+  height: 100vh;
+
 `;
 
 const NumberOfJobs = styled.h3`
@@ -46,7 +49,7 @@ const NumberOfJobs = styled.h3`
 const SearchDiv = styled.div`
   display: flex;
   width: 90%;
-  height: 40px;
+  
   position: relative;
   flex-basis: 60px;
   @media screen and (max-width: 768px) {
@@ -56,6 +59,7 @@ const SearchDiv = styled.div`
 `;
 
 const Input = styled.input`
+height: 65px;
   width: 90%;
   padding-left: 40px;
   border-radius: ${(props) =>
@@ -95,6 +99,8 @@ const SerachButton = styled.button`
 
 const JobListDiv = styled.div`
   flex-grow: 1;
+  overflow-y: scroll;
+  
 `;
 
 const SearchIcons = styled.img`
@@ -132,6 +138,13 @@ const SearchJob = () => {
           </SearchDiv>
           <NumberOfJobs>250 Jobs results</NumberOfJobs>
           <JobListDiv>
+            <JobCard />
+            <JobCard />
+            <JobCard />
+            <JobCard />
+            <JobCard />
+            <JobCard />
+            <JobCard />
             <JobCard />
           </JobListDiv>
         </RightContainer>
