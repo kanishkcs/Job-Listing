@@ -10,12 +10,14 @@ const Wrapper = styled.div`
   border: 1px solid lightgray;
   border-radius: 5px;
   padding: 0 40px 0 40px;
-  margin:25px;
+  margin:23px;
   @media screen and (max-width: 768px) {
-    width: 100%;
+    width: 98%;
     padding-left: 10px;
-    padding-right: 10px;
+    
+    margin-left: 3px;
   }
+ 
 `;
 const TopContainer = styled.div`
   display: flex;
@@ -60,7 +62,13 @@ const DiscriptionDiv = styled.div`
   justify-content: space-between;
 `;
 
-const DiscriptionList = styled.li``;
+const DiscriptionList = styled.li`
+
+@media screen and (max-width: 768px) {
+    font-size: 0.8rem;
+  }
+
+`;
 
 const HEadingDiv = styled.div`
   display: flex;
