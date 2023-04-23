@@ -29,7 +29,7 @@ const Heading = styled.h1`
 margin-bottom: 9px;
 font-size: 1.3rem;
 @media screen and (max-width: 768px) {
-    font-size: .8rem;
+    font-size: .9rem;
 }
 
 `;
@@ -45,7 +45,7 @@ background-color: ${props=> props.bgColor};
 color :  ${props=> props.fontColor};
 
 @media screen and (max-width: 768px) {
-    font-size: .5rem;
+    font-size: .7rem;
     width: 4rem;
     margin: 0 5px 0 0;
 }
