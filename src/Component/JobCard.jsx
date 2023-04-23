@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   @media screen and (max-width: 768px) {
     width: 98%;
     padding-left: 10px;
-    
+    padding-right: 10px;
     margin-left: 3px;
   }
  
@@ -30,7 +30,7 @@ const Heading = styled.h1`
   margin-bottom: 9px;
   font-size: 1.3rem;
   @media screen and (max-width: 768px) {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 `;
 const Tags = styled.button`
@@ -45,7 +45,7 @@ const Tags = styled.button`
   color: ${(props) => props.fontColor};
 
   @media screen and (max-width: 768px) {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     width: 4rem;
     margin: 0 5px 0 0;
   }
@@ -60,6 +60,8 @@ const DiscriptionDiv = styled.div`
   padding: 20px 0px 0px 30px;
   display: flex;
   justify-content: space-between;
+
+ 
 `;
 
 const DiscriptionList = styled.li`
@@ -79,6 +81,11 @@ const Locationicon = styled.img`
   width: 30px;
   margin-top: 13px;
   margin-left: 2 5px;
+  @media screen and (max-width: 670px) {
+    margin-top: 6px;
+    height: 25px;
+    width: 25px;
+  }
 `;
 
 const JobCard = () => {

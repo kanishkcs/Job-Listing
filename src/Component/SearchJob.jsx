@@ -44,6 +44,10 @@ const NumberOfJobs = styled.h3`
   margin-top: 25px;
   padding-left: 5px;
   color: gray;
+
+  @media screen and (max-width: 670px) {
+    margin-top: 99px;
+  }
 `;
 
 const SearchDiv = styled.div`
@@ -68,7 +72,8 @@ height: 65px;
   font-size: 1rem;
 
   @media screen and (max-width: 768px) {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    height: 45px;
   }
 `;
 
@@ -90,7 +95,7 @@ const SerachButton = styled.button`
   }
 
   @media screen and (max-width: 768px) {
-    top: 135%;
+    top: 240%;
     right: 35%;
     width: 120px;
     height: 35px;
@@ -109,6 +114,9 @@ const SearchIcons = styled.img`
   transform: translateY(-50%);
   width: 24px;
   left: 10px;
+  @media screen and (max-width: 670px) {
+    top: 90%;
+  }
 `;
 const LocationIcons = styled.img`
   position: absolute;
@@ -118,6 +126,7 @@ const LocationIcons = styled.img`
   right: 47%;
   @media screen and (max-width: 768px) {
     right: 41%;
+    top: 95%;
   }
 `;
 
