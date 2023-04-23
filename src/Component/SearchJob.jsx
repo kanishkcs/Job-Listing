@@ -105,6 +105,8 @@ const SerachButton = styled.button`
 const JobListDiv = styled.div`
   flex-grow: 1;
   overflow-y: scroll; 
+  overflow-x:hidden ;
+  
   
 `;
 
