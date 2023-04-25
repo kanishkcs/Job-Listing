@@ -22,58 +22,66 @@ const Home = () => {
     </div>
     <div className="box">
         <div className="box1 box1Text">
+            
+           <span className='above_heading'> #4923 jobs are avaiable right now</span >
+            
             <h1> Find the most exciting jobs.</h1>
-            <p>Leverage agile framworks to provide a robust synopsis for high level overviews.iterative to 
-            </p>
+            <h4 className='last_heading'>Leverage agile framworks to provide a robust synopsis for high level overviews.iterative to 
+            </h4>
         </div>
         <div className="box1 box1Image">
             <img src=" https://i0.wp.com/gbsn.org/wp-content/uploads/2022/01/gbsn-homepage-graphic-1.png?resize=768%2C768&ssl=1"alt="" width="400" height="300" />
         </div>
     </div>
     <div className="container2">
-        <h7>Get hired in top companies</h7>
+        <h3>Get hired in top companies</h3>
 
     </div>
     <div className="container3">
         <div className="content3" >
-          
+
                 <span> Makeless</span>
+                <img className="clap_icon" src="clap.png" /> 
                 <span>coworks</span>
+                <img className="leaf_icon" src="leaf.png" />
                 <span>greener</span>
+                <img className="circle_icon" src="circle.png" />
                 <span>SAAS TODAY</span>
                 <span> dorfus</span>
-                <span> dorfus</span>
-           
         </div>
+      
+    
+    <h1 className="container4">Explore by category</h1>
+        
+        
+
+     <h3 className='last_line'> Leverage agile frameworks to provide a robust synopsis for high level overview to start.</h3>
+        
+
+    </div>
+    <div  className=" grid_contaner5">
+
+       <div class="grid-item">Web developer</div>
+       <div class="grid-item">Design</div>
+       <div class="grid-item">Project manger</div>
+       <div class="grid-item"> Data science </div>
+       <div class="grid-item"> App Developer</div>
+       <div class="grid-item">project</div>
+       <div class="grid-item">Development</div>
+       <div class="grid-item">Block chain</div> 
+
+        
+
+            
         
     </div>
-    <div className="container4">
-        <h1> Explore by category</h1>
-     </div>   
-        
-    <div>
-        <p> Leverage agile frameworks to provide a robust synopsis for high level overview to start.</p>
-    </div>
-    <div  className="contaner5">
-        <div className=" item content">
-            <u1>
-                <li> web development</li>
-                <li>Development</li>
-                <li>Data mimng</li>
-                <li>Data Information </li>
-                <li>Moblie Development</li>
-                <li>App Design</li>
-                
-            </u1>
-        </div> 
-    </div>
-    <div className="container6">
-        <div className="container text">
+    <div className="footer">
+        <div className="container_text">
             <h3> Most comprehensive job portal</h3>
             <p> we must explain to you how all this mistake idea of denouncing</p>
 
         </div>
-        <div className="container info">
+        <div className="footer_info">
            <a href="#">LON IN </a>
            <a href="#">REGISTER</a>
         </div>
