@@ -1,5 +1,36 @@
 import React from "react";
 import "./home.css";
+import styled from "styled-components";
+
+// Images
+
+import ToolIcon from "../../assets/tool-box.png";
+import Bullhorn from "../../assets/bullhorn.png"
+import CodingIcon from "../../assets/coding.png"
+import CustomerSupportIcon from "../../assets/customer-support.png"
+import ProjectIcon from "../../assets/project-management.png"
+import UserIcon from "../../assets/user.png"
+import Design from "../../assets/web-design.png"
+
+const Button = styled.button`
+  background-color: ${(props) => props.color};
+  width: 55px;
+  height: 55px;
+  border-radius: 7px;
+  cursor: pointer;
+`;
+
+const GridImage = styled.img`
+  width: 25px;
+  height: 25px;
+`;
+
+const GridHeading = styled.h6``;
+
+const GridSmall = styled.span`
+  color: gray;
+`;
+
 const Home = () => {
   return (
     <>
@@ -16,7 +47,7 @@ const Home = () => {
           <a href="">Upload Job</a>
           <a href="">About us</a>
         </div>
-    
+
         <div className="right_container icon">
           <img className="bell_icon" src="bell.png" />
           <a href="#">Search</a>
@@ -68,14 +99,63 @@ const Home = () => {
         </h3>
       </div>
       <div className=" grid_container5">
-        <div class="grid-item">Web developer</div>
-        <div class="grid-item">Design</div>
-        <div class="grid-item">Project manger</div>
-        <div class="grid-item"> Data science </div>
-        <div class="grid-item"> App Developer</div>
-        <div class="grid-item">project</div>
-        <div class="grid-item">Development</div>
-        <div class="grid-item">Block chain</div>
+        <div class="grid-item">
+          <Button>
+            <GridImage src={ToolIcon} />
+          </Button>
+          <GridHeading>Web Developer</GridHeading>
+          <GridSmall>437 vacancy</GridSmall>
+        </div>
+        <div class="grid-item">
+          <Button>
+            <GridImage src={CodingIcon} />
+          </Button>
+          <GridHeading>Web Developer</GridHeading>
+          <GridSmall>437 vacancy</GridSmall>
+        </div>
+        <div class="grid-item">
+          <Button>
+            <GridImage src={Design} />
+          </Button>
+          <GridHeading>Web Developer</GridHeading>
+          <GridSmall>437 vacancy</GridSmall>
+        </div>
+        <div class="grid-item">
+          <Button>
+            <GridImage src={Bullhorn} />
+          </Button>
+          <GridHeading>Web Developer</GridHeading>
+          <GridSmall>437 vacancy</GridSmall>
+        </div>
+        <div class="grid-item">
+          <Button>
+            <GridImage src={CustomerSupportIcon} />
+          </Button>
+          <GridHeading>Web Developer</GridHeading>
+          <GridSmall>437 vacancy</GridSmall>
+        </div>
+        <div class="grid-item">
+          <Button>
+            <GridImage src={UserIcon} />
+          </Button>
+          <GridHeading>Web Developer</GridHeading>
+          <GridSmall>437 vacancy</GridSmall>
+        </div>
+        <div class="grid-item">
+          <Button>
+            <GridImage src={ProjectIcon} />
+          </Button>
+          <GridHeading>Web Developer</GridHeading>
+          <GridSmall>437 vacancy</GridSmall>
+        </div>
+        <div class="grid-item">
+          <Button>
+            <GridImage src={ToolIcon} />
+          </Button>
+          <GridHeading>Web Developer</GridHeading>
+          <GridSmall>437 vacancy</GridSmall>
+        </div>
+       
       </div>
       <div className="footer">
         <div className="container_text">
