@@ -42,6 +42,7 @@ const Home = () => {
                 <span>greener</span>
                 <span>SAAS TODAY</span>
                 <span> dorfus</span>
+                <span> dorfus</span>
            
         </div>
         
