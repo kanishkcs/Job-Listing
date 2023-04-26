@@ -11,6 +11,9 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-around;
   padding: 30px 0px;
+  position: fixed;
+  background-color: white;
+  width: 100%;
 `;
 
 const LeftContainer = styled.div`
