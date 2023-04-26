@@ -13,7 +13,7 @@ function App() {
 
     <>
     <CustomCursor />
-<JobPage/> 
+<JobDetails/> 
 
     </>
             
