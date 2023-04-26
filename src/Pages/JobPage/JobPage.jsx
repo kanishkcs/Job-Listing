@@ -2,11 +2,14 @@ import React from "react";
 import "./jobPage.css";
 import Jobpage_banner from "./jobpage_banner.png";
 import SearchJob from "../../Component/SearchJob";
+import JobCard from "../../Component/JobCard";
+import Navbar from "../../Component/Navbar";
+
 export const JobPage = () => {
   return (
     <>
       {/* Banner Section */}
-
+      
       <div className="jobpage_banner_div">
         <div className="jobpage_heading_div">
           <h1 className="jobpage_banner_heading">Find Your Dream Job</h1>
@@ -20,9 +23,10 @@ export const JobPage = () => {
         </div>
       </div>
       <SearchJob/>
+     
 
     </>
   );
 };
 
-// How to import Image in React?
+
