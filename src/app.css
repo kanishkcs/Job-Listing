@@ -20,3 +20,24 @@ h1{
     font-family: 'Open Sans', sans-serif !important;
 }
 
+.nav_links{
+    text-decoration: none;
+    color: gray;
+    padding-left: 3.5rem;
+}
+.nav_links::after{
+    content: "";
+    width: 0 ;
+    height: 5px;
+    display: block;
+    background: #0b9e44;
+    transition: 300ms;
+    border-radius: 5px;
+}
+.active:after {
+    width: 100%;
+}
+
+.nav_links:hover{
+color: #0b9e44  ;
+}

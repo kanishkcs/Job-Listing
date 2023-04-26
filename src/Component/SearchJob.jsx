@@ -135,7 +135,7 @@ const LocationIcons = styled.img`
 const SearchJob = () => {
 
   const jobCards = [];
-  for (let i = 0; i < 250; i++) {
+  for (let i = 0; i < 10; i++) {
     jobCards.push(<JobCard key={i} />);
   }
   return (

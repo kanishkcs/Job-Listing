@@ -12,6 +12,7 @@ import CustomerSupportIcon from "../../assets/customer-support.png"
 import ProjectIcon from "../../assets/project-management.png"
 import UserIcon from "../../assets/user.png"
 import Design from "../../assets/web-design.png"
+import Navbar from "../../Component/Navbar";
 
 const Button = styled.button`
   background-color: ${(props) => props.color};
@@ -35,25 +36,7 @@ const GridSmall = styled.span`
 const Home = () => {
   return (
     <>
-      <div className="container">
-        <div className="item brandName">
-          <h1>
-            {" "}
-            <a href="#"> First Step</a>
-          </h1>
-        </div>
-        <div className="middle_container content">
-          <Link to="/job-page">Find Jobs</Link>
-          <a href="">Find Talent</a>
-          <a href="">Upload Job</a>
-          <a href="">About us</a>
-        </div>
-
-        <div className="right_container icon">
-          <img className="bell_icon" src="bell.png" />
-          <a href="#">Search</a>
-        </div>
-      </div>
+      
       <div className="box">
         <div className="box1 box1Text">
           <span className="above_heading">
