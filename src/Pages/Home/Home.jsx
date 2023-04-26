@@ -1,6 +1,7 @@
 import React from "react";
 import "./home.css";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 // Images
 
@@ -42,7 +43,7 @@ const Home = () => {
           </h1>
         </div>
         <div className="middle_container content">
-          <a href="">Find Jobs</a>
+          <Link to="/job-page">Find Jobs</Link>
           <a href="">Find Talent</a>
           <a href="">Upload Job</a>
           <a href="">About us</a>

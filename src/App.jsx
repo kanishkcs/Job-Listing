@@ -5,6 +5,9 @@ import "./app.css";
 import Home from "./Pages/Home/Home";
 import JobDetails from "./Pages/JobDetails/JobDetails";
 import { JobPage } from "./Pages/JobPage/JobPage";
+
+
+
 function App() {
   const [count, setCount] = useState(0);
 
