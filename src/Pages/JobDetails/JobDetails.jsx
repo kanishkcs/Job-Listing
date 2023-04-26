@@ -1,82 +1,63 @@
 import React from 'react'
 import "./JobDetails.css"
+import styled from 'styled-components'
+import JobCard from '../../Component/JobCard'
+
+
+const Wrapper = styled.div`
+
+display:flex;
+justify-content: center;
+flex-direction: column;
+align-items:center;
+`
+
+const Container = styled.div`
+
+`
+
+const Heading = styled.h2`
+
+`
+
+const List = styled.li`
+
+`
 
 
 const JobDetails = () => {
   return (
     <>
-      <title>Job Details</title>
-      <div class="top">
-        <header>
-          <h1 class="detail_title" title="Company Role">Role in Company</h1>
-        </header>
-        <div class="company_name">,<a href="" title="Company Name">Company Name</a>
-        </div>
-      </div>
-      <div class="detail view">
-        <div class="internship">
-          <div class="active_hiring">
-            <span>Get hired as quickly as possible</span>
-          </div>
-          <div class="individual_internship_header">
-            <div class="company">
-              <h3 class="job_role_heading">
-                <span class="profile-detail_page">Job Role to be specified</span>
-              </h3>
-              <h4 class="heading_company_name"><a href="">Company Name</a></h4>
-            </div>
-            <div class="internship_logo"> </div>
-          </div>
-          <div class="individual_internship_details individual_internship_job">
-            <p id="location_name">
-              <span>
-                <a class="location_link view_detail_button" href="">Chennai,</a>
-                <a class="location_link view_detail_button" href=""> Bangalore,</a>
-                <a class="location_link view_detail_button" href=""> Hyderabad</a>
-              </span>
-            </p>
-            <div class="internship_other_details_container">
-              <div class="other_detail_item_row">
-                <div class="other_detail_item">
-                  <div class="item_heading">
-                    <span>
-                      " Start Date "
-                    </span>
-                  </div>
-                  <div class="item_body" id="start_date_first">
-                    " Immediately "
-                  </div>
-                </div>
-                <div class=" other_item_detail">
-                  <div class="item_heading">
-                    <span>CTC</span>
-                  </div>
-                  <div class="item_body_salary">
-                    " 3 - 4.5 Lpa "
-                  </div>
-                </div>
-                <div class="job_experience_item">
-                  <div class="item_heading">
-                    <span> Experience </span>
-                  </div>
-                  <div class="item_body desktop_show">year to be shown by company</div>
-                  <div class="item-body mobile_responsive_show">year to be shown</div>
-                </div>
-              </div>
-            </div>
-            <div class = "last_application_date">
-              <div class = "other_details">
-                <div class = "item_heading">
-                 <span>Apply By</span>
-                </div>
-                <div class = "item_body">Company given last date</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-      </div>
+      <Wrapper>
 
+
+
+        <Heading>Full Stack Web Developer </Heading>
+      </Wrapper>
+      <JobCard />
+
+      <Container>
+        <Heading>About the Company Role</Heading>
+        <p>Are you looking for an opportunity to help empower marginalized communities? We are seeking an enthusiastic, motivated, and reliable Volunteering Intern to join our team at NayePankh Foundation. 
+          If you are compassionate and enjoy working with people, this is the job for you.
+          As a volunteering intern, you will be given four different tasks for different weeks, you will be required to do social work near your area and spread positivity, and share the photos and videos of that social work on your social media, 
+          you will also be supporting the organization by raising funds and encouraging your friend to accompany you in this internship. 
+          You will support our organization's efforts to encourage volunteering and contribute to the development of the community.</p>
+          <Heading>Skills Required</Heading>
+          <p> HTML  CSS   JavaScript  Bootstrap  jQuery MongoDB MySQL   PHP  Wordpress </p>
+          <Heading>Who can Apply</Heading>
+            <p>Canditates who can apply</p>
+           <ol>
+            <List>I can Apply </List>
+            <List>I can Apply </List>
+            <List>I can Apply </List>
+            <List>I can Apply </List>
+            <List>I can Apply </List>
+           </ol>
+           <p> *Women or Men who want to restart their career can also apply </p>
+          <Heading>Perks</Heading>
+          
+      </Container>
 
     </>
 
