@@ -4,11 +4,13 @@ import { Link, useLocation } from "react-router-dom";
 
 // images
 import LogoIcon from "../assets/logopng.png";
+import BellIcon from "../assets/bell.png"
+import Blimp from "../assets/profile.png"
 
 const Wrapper = styled.div`
   display: flex;
-  justify-content: space-between;
-  padding: 10px;
+  justify-content: space-around;
+  padding: 30px 0px;
 `;
 
 const LeftContainer = styled.div`
@@ -16,13 +18,18 @@ const LeftContainer = styled.div`
 `;
 
 const MiddleContainer = styled.div`
-
-display: flex;
+  display: flex;
 `;
-const RightContainer = styled.div``;
+const RightContainer = styled.div`
+display: flex;
+justify-content: space-between;
+width: 3em;
+
+`;
 const Logo = styled.img`
   width: 35px;
   height: 35px;
+  margin-left: ${props=>props.pd} ;
 `;
 
 const Heading = styled.h1`
@@ -31,7 +38,6 @@ const Heading = styled.h1`
 
 const Navbar = () => {
   let url = useLocation();
-
 
   return (
     <>
@@ -42,14 +48,44 @@ const Navbar = () => {
         </LeftContainer>
 
         <MiddleContainer>
-        <Link to="/" className={`nav_links ${url.pathname==="/" ? "active" :"" }`}>Home</Link>
-      <Link to='job-page' className={`nav_links ${url.pathname==="/job-page" ? "active" :"" }`}>Jobs</Link>
-      
-      <Link to="job-details" className={`nav_links ${url.pathname==="/job-details" ? "active" :"" }`}>Post a Job </Link>
-      <Link to="search" className={`nav_links ${url.pathname==="/search" ? "active" :"" }`}> Search</Link>
+          <Link
+            to="/"
+            className={`nav_links ${url.pathname === "/" ? "active" : ""}`}
+          >
+            Home
+          </Link>
+          <Link
+            to="job-page"
+            className={`nav_links ${
+              url.pathname === "/job-page" ? "active" : ""
+            }`}
+          >
+            Jobs
+          </Link>
 
+          <Link
+            to="job-details"
+            className={`nav_links ${
+              url.pathname === "/job-details" ? "active" : ""
+            }`}
+          >
+            Post a Job{" "}
+          </Link>
+          <Link
+            to="search"
+            className={`nav_links ${
+              url.pathname === "/search" ? "active" : ""
+            }`}
+          >
+            {" "}
+            Search
+          </Link>
         </MiddleContainer>
-        <RightContainer></RightContainer>
+        <RightContainer>
+
+          <Logo src={BellIcon}   />
+          <Logo src={Blimp} pd="20px"/>
+        </RightContainer>
       </Wrapper>
     </>
   );
