@@ -30,6 +30,7 @@ const Logo = styled.img`
   width: 35px;
   height: 35px;
   margin-left: ${props=>props.pd} ;
+  cursor: pointer;
 `;
 
 const Heading = styled.h1`
@@ -43,7 +44,7 @@ const Navbar = () => {
     <>
       <Wrapper>
         <LeftContainer>
-          <Logo src={LogoIcon} />
+        <Link to='/'> <Logo src={LogoIcon} /></Link>
           <Heading>First Step</Heading>
         </LeftContainer>
 
@@ -83,7 +84,7 @@ const Navbar = () => {
         </MiddleContainer>
         <RightContainer>
 
-          <Logo src={BellIcon}   />
+         <Logo src={BellIcon}   />
           <Logo src={Blimp} pd="20px"/>
         </RightContainer>
       </Wrapper>
