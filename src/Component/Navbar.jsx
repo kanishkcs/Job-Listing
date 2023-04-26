@@ -42,8 +42,9 @@ const Navbar = () => {
         </LeftContainer>
 
         <MiddleContainer>
+        <Link to="/" className={`nav_links ${url.pathname==="/" ? "active" :"" }`}>Home</Link>
       <Link to='job-page' className={`nav_links ${url.pathname==="/job-page" ? "active" :"" }`}>Jobs</Link>
-      <Link to="/" className={`nav_links ${url.pathname==="/" ? "active" :"" }`}>Internship</Link>
+      
       <Link to="job-details" className={`nav_links ${url.pathname==="/job-details" ? "active" :"" }`}>Post a Job </Link>
       <Link to="search" className={`nav_links ${url.pathname==="/search" ? "active" :"" }`}> Search</Link>
 
