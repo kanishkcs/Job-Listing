@@ -2,6 +2,7 @@ import React from "react";
 import "./home.css";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
 // Images
 
@@ -15,7 +16,7 @@ import Design from "../../assets/web-design.png"
 import Navbar from "../../Component/Navbar";
 
 const Button = styled.button`
-  background-color: ${(props) => props.color};
+  background-color: ${(props) => props.colors};
   width: 55px;
   height: 55px;
   border-radius: 7px;
@@ -36,7 +37,7 @@ const GridSmall = styled.span`
 const Home = () => {
   return (
     <>
-      
+
       <div className="box">
         <div className="box1 box1Text">
           <span className="above_heading">
@@ -84,73 +85,135 @@ const Home = () => {
       </div>
       <div className=" grid_container5">
         <div class="grid-item">
-          <Button>
+          <Button colors="blue">
             <GridImage src={ToolIcon} />
           </Button>
           <GridHeading>Web Developer</GridHeading>
           <GridSmall>437 vacancy</GridSmall>
         </div>
         <div class="grid-item">
-          <Button>
+          <Button colors="cyan">
             <GridImage src={CodingIcon} />
           </Button>
-          <GridHeading>Web Developer</GridHeading>
+          <GridHeading>Design</GridHeading>
           <GridSmall>437 vacancy</GridSmall>
         </div>
         <div class="grid-item">
-          <Button>
+          <Button colors="orange">
             <GridImage src={Design} />
           </Button>
           <GridHeading>Web Developer</GridHeading>
           <GridSmall>437 vacancy</GridSmall>
         </div>
         <div class="grid-item">
-          <Button>
+          <Button colors="Maroon" >
             <GridImage src={Bullhorn} />
           </Button>
-          <GridHeading>Web Developer</GridHeading>
+          <GridHeading>Project</GridHeading>
           <GridSmall>437 vacancy</GridSmall>
         </div>
         <div class="grid-item">
-          <Button>
+          <Button colors="peru" >
             <GridImage src={CustomerSupportIcon} />
           </Button>
-          <GridHeading>Web Developer</GridHeading>
+          <GridHeading>Mangement</GridHeading>
           <GridSmall>437 vacancy</GridSmall>
         </div>
         <div class="grid-item">
-          <Button>
+          <Button colors="yellow">
             <GridImage src={UserIcon} />
           </Button>
-          <GridHeading>Web Developer</GridHeading>
+          <GridHeading>Block chain</GridHeading>
           <GridSmall>437 vacancy</GridSmall>
         </div>
         <div class="grid-item">
-          <Button>
+          <Button colors="Teal">
             <GridImage src={ProjectIcon} />
           </Button>
-          <GridHeading>Web Developer</GridHeading>
+          <GridHeading>Development</GridHeading>
           <GridSmall>437 vacancy</GridSmall>
         </div>
         <div class="grid-item">
-          <Button>
+          <Button colors="Mint">
             <GridImage src={ToolIcon} />
           </Button>
-          <GridHeading>Web Developer</GridHeading>
+          <GridHeading>Database</GridHeading>
           <GridSmall>437 vacancy</GridSmall>
         </div>
-       
+
       </div>
       <div className="footer">
         <div className="container_text">
-          <h3> Most comprehensive job portal</h3>
-          <p> we must explain to you how all this mistake idea of denouncing</p>
+          <h1> Most comprehensive job portal</h1>
+
+          <p > we must explain to you how all this mistake idea of denouncing</p>
+          <div className="footer_button">
+
+            <button type="submit">RGISTER </button>
+            <button type="register">LOG IN </button>
+          </div>
+        </div>E
+
+        <div className="footer_container">
+          <div className="row">
+            <div className="footer_col">
+              <span className="firstHalf">JUST <span className="secondHalf">CAMP</span></span>
+              <h3>Contact us at </h3>
+              <span className="footer_email">support@uxtheme.net</span>
+              <h4>Follow us</h4>
+              <div className="social-links">
+                <a href="#"> <i class="fab fa-facebook-f"></i></a>
+
+              </div>
+
+
+            </div>
+            <div className="footer_col">
+              <h4>company</h4>
+              <ul>
+                <li><a href="#">About Us</a> </li>
+                <li><a href="#">Contact us</a> </li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Press</a></li>
+              </ul>
+
+            </div>
+            <div className="footer_col">
+              <h4>Product</h4>
+              <ul>
+                <li><a href="#">Festure</a></li>
+                <li><a href="#">Pricing</a> </li>
+                <li><a href="#">News</a> </li>
+                <li><a href="#">Help desk</a></li>
+                <li><a href="#">Support</a></li>
+              </ul>
+
+            </div>
+            <div className="footer_col">
+              <h4>Services</h4>
+              <ul>
+                <li><a href="#">Digital Marking </a> </li>
+                <li><a href="#">SEO for Business</a></li>
+                <li><a href="#">Avasta Dash</a></li>
+                <li><a href="#">UI Design</a></li>
+              </ul>
+
+            </div>
+            <div className="footer_col">
+              <h4>   Legal</h4>
+              <ul>
+                <li><a href="#"> Privacy Policy</a> </li>
+                <li><a href="#">Terms &Conditions</a></li>
+                <li><a href="#">Return Policy</a></li>
+              </ul>
+            </div>
+
+          </div>
+
         </div>
-        <div className="footer_info">
-          <a href="#">LON IN </a>
-          <a href="#">REGISTER</a>
-        </div>
+
       </div>
+
     </>
   );
 };
