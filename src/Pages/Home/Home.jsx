@@ -83,56 +83,56 @@ const Home = () => {
         </h3>
       </div>
       <div className=" grid_container5">
-        <div class="grid-item">
+        <div className="grid-item">
           <Button colors="blue">
             <GridImage src={ToolIcon} />
           </Button>
           <GridHeading>Web Developer</GridHeading>
           <GridSmall>437 vacancy</GridSmall>
         </div>
-        <div class="grid-item">
+        <div className="grid-item">
           <Button colors="cyan">
             <GridImage src={CodingIcon} />
           </Button>
           <GridHeading>Design</GridHeading>
           <GridSmall>437 vacancy</GridSmall>
         </div>
-        <div class="grid-item">
+        <div className="grid-item">
           <Button colors="orange">
             <GridImage src={Design} />
           </Button>
           <GridHeading>Web Developer</GridHeading>
           <GridSmall>437 vacancy</GridSmall>
         </div>
-        <div class="grid-item">
+        <div className="grid-item">
           <Button colors="Maroon">
             <GridImage src={Bullhorn} />
           </Button>
           <GridHeading>Project</GridHeading>
           <GridSmall>437 vacancy</GridSmall>
         </div>
-        <div class="grid-item">
-          <Button colors="peru">
+        <div className="grid-item">
+          <Button colors="#FF6969">
             <GridImage src={CustomerSupportIcon} />
           </Button>
           <GridHeading>Mangement</GridHeading>
           <GridSmall>437 vacancy</GridSmall>
         </div>
-        <div class="grid-item">
+        <div className="grid-item">
           <Button colors="yellow">
             <GridImage src={UserIcon} />
           </Button>
           <GridHeading>Block chain</GridHeading>
           <GridSmall>437 vacancy</GridSmall>
         </div>
-        <div class="grid-item">
+        <div className="grid-item">
           <Button colors="Teal">
             <GridImage src={ProjectIcon} />
           </Button>
           <GridHeading>Development</GridHeading>
           <GridSmall>437 vacancy</GridSmall>
         </div>
-        <div class="grid-item">
+        <div className="grid-item">
           <Button colors="Mint">
             <GridImage src={ToolIcon} />
           </Button>
@@ -187,7 +187,7 @@ const Home = () => {
               <div className="social-links">
                 <a href="#">
                   {" "}
-                  <i class="fab fa-facebook-f"></i>
+                  <i className="fab fa-facebook-f"></i>
                 </a>
               </div>
             </div>
