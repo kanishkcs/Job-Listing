@@ -4,6 +4,9 @@
     padding-left: 30px;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    top: 70px;
+    z-index: -10  ;
   }
   
   .jobpage_banner_heading {

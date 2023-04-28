@@ -218,10 +218,29 @@ ul{
     width: 300px;
     height: 50px;
     gap:10px;
-    box-shadow: ;
+    /* box-shadow: ; */
 
 
 }
+.register_btn{
+    background-color: #1db65d;
+}
+
+.login_btn{
+
+}
+
+.follow_us_div{
+    display: flex;
+   
+    padding-top: 15px;
+}
+.follow_us_div h4{
+    padding: 0;
+    margin: 0;
+}
+
+
 
     
 
@@ -285,9 +304,17 @@ ul{
     color: #ffffff;
     padding-left: 0px;
 }
-media
 
+.contact_us_div{
 
+    display: flex;
+}
+
+.contact_us_logo_div img{ 
+ width: 45px;
+ padding-top: 20px;
+
+}
 
 
 

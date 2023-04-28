@@ -2,18 +2,18 @@ import React from "react";
 import "./home.css";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
 // Images
 
+import MessageIcon from "../../assets/chatting.png";
+import TwitterIcon from "../../assets/twitter.png";
 import ToolIcon from "../../assets/tool-box.png";
-import Bullhorn from "../../assets/bullhorn.png"
-import CodingIcon from "../../assets/coding.png"
-import CustomerSupportIcon from "../../assets/customer-support.png"
-import ProjectIcon from "../../assets/project-management.png"
-import UserIcon from "../../assets/user.png"
-import Design from "../../assets/web-design.png"
-import Navbar from "../../Component/Navbar";
+import Bullhorn from "../../assets/bullhorn.png";
+import CodingIcon from "../../assets/coding.png";
+import CustomerSupportIcon from "../../assets/customer-support.png";
+import ProjectIcon from "../../assets/project-management.png";
+import UserIcon from "../../assets/user.png";
+import Design from "../../assets/web-design.png";
 
 const Button = styled.button`
   background-color: ${(props) => props.colors};
@@ -37,7 +37,6 @@ const GridSmall = styled.span`
 const Home = () => {
   return (
     <>
-
       <div className="box">
         <div className="box1 box1Text">
           <span className="above_heading">
@@ -106,14 +105,14 @@ const Home = () => {
           <GridSmall>437 vacancy</GridSmall>
         </div>
         <div class="grid-item">
-          <Button colors="Maroon" >
+          <Button colors="Maroon">
             <GridImage src={Bullhorn} />
           </Button>
           <GridHeading>Project</GridHeading>
           <GridSmall>437 vacancy</GridSmall>
         </div>
         <div class="grid-item">
-          <Button colors="peru" >
+          <Button colors="peru">
             <GridImage src={CustomerSupportIcon} />
           </Button>
           <GridHeading>Mangement</GridHeading>
@@ -140,80 +139,129 @@ const Home = () => {
           <GridHeading>Database</GridHeading>
           <GridSmall>437 vacancy</GridSmall>
         </div>
-
       </div>
       <div className="footer">
         <div className="container_text">
           <h1> Most comprehensive job portal</h1>
 
-          <p > we must explain to you how all this mistake idea of denouncing</p>
+          <p> we must explain to you how all this mistake idea of denouncing</p>
           <div className="footer_button">
-
-            <button type="submit">RGISTER </button>
-            <button type="register">LOG IN </button>
+            <button type="submit" className="register_btn">
+              RGISTER{" "}
+            </button>
+            <button type="register" className="login_btn">
+              LOG IN{" "}
+            </button>
           </div>
-        </div>E
-
+        </div>
+        E
         <div className="footer_container">
           <div className="row">
             <div className="footer_col">
-              <span className="firstHalf">JUST <span className="secondHalf">CAMP</span></span>
-              <h3>Contact us at </h3>
-              <span className="footer_email">support@uxtheme.net</span>
-              <h4>Follow us</h4>
-              <div className="social-links">
-                <a href="#"> <i class="fab fa-facebook-f"></i></a>
+              <span className="firstHalf">
+                JUST <span className="secondHalf">CAMP</span>
+              </span>
 
+              <div className="contact_us_div">
+                <div className="contact_us_logo_div">
+                  <img src={MessageIcon}></img>
+                </div>
+                <div className="contact_us_right_div">
+                  <div className="contact_us_heading">
+                    <h3>Contact us at </h3>
+                  </div>
+                  <div className="contact_us_email">
+                    <span className="footer_email">support@uxtheme.net</span>
+                  </div>
+                </div>
               </div>
 
+              <div className="follow_us_div">
+                <h4>Follow us</h4>
+                <div className="socialmedia_icon_div">
+                  <img src={TwitterIcon} />
+                 
+                </div>
+              </div>
 
+              <div className="social-links">
+                <a href="#">
+                  {" "}
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </div>
             </div>
             <div className="footer_col">
               <h4>company</h4>
               <ul>
-                <li><a href="#">About Us</a> </li>
-                <li><a href="#">Contact us</a> </li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Press</a></li>
+                <li>
+                  <a href="#">About Us</a>{" "}
+                </li>
+                <li>
+                  <a href="#">Contact us</a>{" "}
+                </li>
+                <li>
+                  <a href="#">Careers</a>
+                </li>
+                <li>
+                  <a href="#">Press</a>
+                </li>
               </ul>
-
             </div>
             <div className="footer_col">
               <h4>Product</h4>
               <ul>
-                <li><a href="#">Festure</a></li>
-                <li><a href="#">Pricing</a> </li>
-                <li><a href="#">News</a> </li>
-                <li><a href="#">Help desk</a></li>
-                <li><a href="#">Support</a></li>
+                <li>
+                  <a href="#">Festure</a>
+                </li>
+                <li>
+                  <a href="#">Pricing</a>{" "}
+                </li>
+                <li>
+                  <a href="#">News</a>{" "}
+                </li>
+                <li>
+                  <a href="#">Help desk</a>
+                </li>
+                <li>
+                  <a href="#">Support</a>
+                </li>
               </ul>
-
             </div>
             <div className="footer_col">
               <h4>Services</h4>
               <ul>
-                <li><a href="#">Digital Marking </a> </li>
-                <li><a href="#">SEO for Business</a></li>
-                <li><a href="#">Avasta Dash</a></li>
-                <li><a href="#">UI Design</a></li>
+                <li>
+                  <a href="#">Digital Marking </a>{" "}
+                </li>
+                <li>
+                  <a href="#">SEO for Business</a>
+                </li>
+                <li>
+                  <a href="#">Avasta Dash</a>
+                </li>
+                <li>
+                  <a href="#">UI Design</a>
+                </li>
               </ul>
-
             </div>
             <div className="footer_col">
-              <h4>   Legal</h4>
+              <h4> Legal</h4>
               <ul>
-                <li><a href="#"> Privacy Policy</a> </li>
-                <li><a href="#">Terms &Conditions</a></li>
-                <li><a href="#">Return Policy</a></li>
+                <li>
+                  <a href="#"> Privacy Policy</a>{" "}
+                </li>
+                <li>
+                  <a href="#">Terms &Conditions</a>
+                </li>
+                <li>
+                  <a href="#">Return Policy</a>
+                </li>
               </ul>
             </div>
-
           </div>
-
         </div>
-
       </div>
-
     </>
   );
 };
