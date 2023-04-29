@@ -14,6 +14,10 @@ import CustomerSupportIcon from "../../assets/customer-support.png";
 import ProjectIcon from "../../assets/project-management.png";
 import UserIcon from "../../assets/user.png";
 import Design from "../../assets/web-design.png";
+import AppleIcon from "../../assets/apple.png"
+import GoogleIcon from "../../assets/google.png"
+import AmazonIcon from "../../assets/amazon.png"
+import FlipkartIcon from "../../assets/flipkartpng.png"
 
 const Button = styled.button`
   background-color: ${(props) => props.colors};
@@ -34,44 +38,63 @@ const GridSmall = styled.span`
   color: gray;
 `;
 
+
+const GetStarted = styled.figure`
+display: flex;
+font-size: 1.7rem;
+color: gray;
+`
+
+const GetStartedLogo = styled.img`
+width: 34px;
+`
+
 const Home = () => {
   return (
     <>
       <div className="box">
-        <div className="box1 box1Text">
+        <div className="box1">
           <span className="above_heading">
             {" "}
             #4923 jobs are avaiable right now
           </span>
 
-          <h1> Find the most exciting jobs.</h1>
+          <h1 className=" box1Text"> Find the most exciting jobs.</h1>
           <h4 className="last_heading">
             Leverage agile framworks to provide a robust synopsis for high level
             overviews.iterative to
           </h4>
         </div>
-        <div className="box1 box1Image">
-          <img
+        <div className="box1 ">
+          <img className="box1Image"
             src=" https://i0.wp.com/gbsn.org/wp-content/uploads/2022/01/gbsn-homepage-graphic-1.png?resize=768%2C768&ssl=1"
             alt=""
-            width="400"
-            height="300"
+            width="700"
+            height="700"
           />
         </div>
       </div>
       <div className="container2">
-        <h3>Get hired in top companies</h3>
+        <h1 >Get hired in top companies</h1>
       </div>
       <div className="container3">
         <div className="content3">
-          <span> Makeless</span>
-          <img className="clap_icon" src="clap.png" />
-          <span>coworks</span>
-          <img className="leaf_icon" src="leaf.png" />
-          <span>greener</span>
-          <img className="circle_icon" src="circle.png" />
-          <span>SAAS TODAY</span>
-          <span> dorfus</span>
+          <GetStarted>
+            <GetStartedLogo src={AppleIcon}/>
+            <figcaption>Apple</figcaption>
+          </GetStarted>
+          <GetStarted>
+            <GetStartedLogo src={GoogleIcon}/>
+            <figcaption>Google</figcaption>
+          </GetStarted>
+          <GetStarted>
+            <GetStartedLogo src={AmazonIcon}/>
+            <figcaption>Amazon</figcaption>
+          </GetStarted>
+          <GetStarted>
+            <GetStartedLogo src={FlipkartIcon}/>
+            <figcaption>Flipkart</figcaption>
+          </GetStarted>
         </div>
 
         <h1 className="container4">Explore by category</h1>

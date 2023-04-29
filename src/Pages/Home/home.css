@@ -51,19 +51,24 @@ padding-left: 20px;
 
 .box1 {
     padding: 20%;
+    height: 100vh;
 
 }
 .above_heading {
     color: green;
     font-family: sans-serif;
     font-weight: bold;
+    font-size: 2.7rem;
 }
 .last_heading{
     font-weight: normal;
 }
 
 .box1Text {
-    color: black
+    font-size: 2.3rem;
+}
+.last_heading{
+    font-size: 1.7rem;
 }
 
 .container2 {
