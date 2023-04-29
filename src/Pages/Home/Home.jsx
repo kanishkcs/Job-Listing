@@ -18,6 +18,8 @@ import AppleIcon from "../../assets/apple.png"
 import GoogleIcon from "../../assets/google.png"
 import AmazonIcon from "../../assets/amazon.png"
 import FlipkartIcon from "../../assets/flipkartpng.png"
+import FacebookIcon from  "../../assets/facebook.png ";
+import LinkedinIcon from "../../assets/linkedin.png";
 
 const Button = styled.button`
   background-color: ${(props) => props.colors};
@@ -107,14 +109,14 @@ const Home = () => {
       </div>
       <div className=" grid_container5">
         <div className="grid-item">
-          <Button colors="blue">
+          <Button colors="#146C94">
             <GridImage src={ToolIcon} />
           </Button>
           <GridHeading>Web Developer</GridHeading>
           <GridSmall>437 vacancy</GridSmall>
         </div>
         <div className="grid-item">
-          <Button colors="cyan">
+          <Button colors="#A5C0DD">
             <GridImage src={CodingIcon} />
           </Button>
           <GridHeading>Design</GridHeading>
@@ -128,7 +130,7 @@ const Home = () => {
           <GridSmall>437 vacancy</GridSmall>
         </div>
         <div className="grid-item">
-          <Button colors="Maroon">
+          <Button colors="#917FB3">
             <GridImage src={Bullhorn} />
           </Button>
           <GridHeading>Project</GridHeading>
@@ -156,7 +158,7 @@ const Home = () => {
           <GridSmall>437 vacancy</GridSmall>
         </div>
         <div className="grid-item">
-          <Button colors="Mint">
+          <Button colors="#B0A4A4">
             <GridImage src={ToolIcon} />
           </Button>
           <GridHeading>Database</GridHeading>
@@ -203,6 +205,7 @@ const Home = () => {
                 <h4>Follow us</h4>
                 <div className="socialmedia_icon_div">
                   <img src={TwitterIcon} />
+                  
                  
                 </div>
               </div>
@@ -211,6 +214,7 @@ const Home = () => {
                 <a href="#">
                   {" "}
                   <i className="fab fa-facebook-f"></i>
+                  
                 </a>
               </div>
             </div>
