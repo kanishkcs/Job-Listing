@@ -11,6 +11,13 @@ justify-content: center;
 flex-direction: column;
 align-items:center;
 `
+const Tags = styled.div`
+color : black;
+width : 80px;
+height : 20px;
+background-color : grey;
+border-radius : 7px;
+`
 
 const Container = styled.div`
 
@@ -43,9 +50,14 @@ const JobDetails = () => {
           As a volunteering intern, you will be given four different tasks for different weeks, you will be required to do social work near your area and spread positivity, and share the photos and videos of that social work on your social media,
           you will also be supporting the organization by raising funds and encouraging your friend to accompany you in this internship.
           You will support our organization's efforts to encourage volunteering and contribute to the development of the community.</p>
-        <Heading>Skills Required</Heading>
-        <p> HTML  CSS   JavaScript  Bootstrap  jQuery MongoDB MySQL   PHP  Wordpress </p>
-        
+        <Heading>Skills required</Heading>
+        <Tags className="skill_section">HTML</Tags>
+        <Tags className="skill_section">CSS</Tags>
+        <Tags className="skill_section">JavaScript</Tags>
+        <Tags className="skill_section">Bootstrap</Tags>
+
+
+
         <Heading>Who can Apply</Heading>
         <p>Canditates who can apply</p>
         <ol>
@@ -57,7 +69,7 @@ const JobDetails = () => {
         </ol>
         <p> *Women who want to start/restart their career can also apply </p>
         <Heading>Perks</Heading>
-        <p>Certificate   Letter of Recommnedation   Flexible Work Hours     Informal Dress Code   5 days a week</p>
+        <p>Certificate   Letter of Recommendation   Flexible Work Hours     Informal Dress Code   5 days a week</p>
         <Heading>Number of openings</Heading>
         <p>6</p>
 
