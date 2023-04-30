@@ -5,9 +5,11 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    top: 70px;
+    top: 80px;
     z-index: -10  ;
+    
   }
+ 
   
   .jobpage_banner_heading {
     font-size: 3vw;

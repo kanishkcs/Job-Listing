@@ -7,7 +7,7 @@ import JobDetails from "./Pages/JobDetails/JobDetails";
 import { JobPage } from "./Pages/JobPage/JobPage";
 import Navbar from "./Component/Navbar";
 import { Route,Routes } from "react-router-dom";
-
+import PostJob from "./Pages/Post Job/PostJob";
 
 
 function App() {
@@ -21,7 +21,8 @@ function App() {
     <Route path='/' element={<Home/>}/>
     <Route path='/job-page' element={<JobPage/>}/>
     <Route path='/job-details' element={<JobDetails/>}/>
-    
+    <Route path='/postjob' element={<PostJob/>} />
+
     
   </Routes>
     </>

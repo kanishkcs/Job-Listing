@@ -11,8 +11,10 @@ const Wrapper = styled.div`
   width: 100vw;
   padding-left: 3vw;
   margin-top: 40px;
-  display: flexs;
-
+  display: flex;
+  margin-top: 6rem;
+  position: absolute;
+  
   @media screen and (max-width: 768px) {
     padding: 4px;
 
@@ -135,7 +137,7 @@ const LocationIcons = styled.img`
 const SearchJob = () => {
 
   const jobCards = [];
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 700; i++) {
     jobCards.push(<JobCard key={i} />);
   }
   return (

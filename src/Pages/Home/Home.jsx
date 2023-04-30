@@ -65,7 +65,7 @@ const Home = () => {
             overviews.iterative to
           </h4>
         </div>
-        <div className="box1 ">
+        <div className="box1">
           <img className="box1Image"
             src=" https://i0.wp.com/gbsn.org/wp-content/uploads/2022/01/gbsn-homepage-graphic-1.png?resize=768%2C768&ssl=1"
             alt=""
@@ -105,9 +105,9 @@ const Home = () => {
           overview to start.
         </h3>
       </div>
-      <div className=" grid_container5">
+      <div className=" grid_container5">  
         <div className="grid-item">
-          <Button colors="blue">
+          <Button colors="#F6F1F1">
             <GridImage src={ToolIcon} />
           </Button>
           <GridHeading>Web Developer</GridHeading>
