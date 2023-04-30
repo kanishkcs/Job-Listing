@@ -22,6 +22,7 @@ function App() {
     <Route path='/job-page' element={<JobPage/>}/>
     <Route path='/job-details' element={<JobDetails/>}/>
     
+    
   </Routes>
     </>
   );
