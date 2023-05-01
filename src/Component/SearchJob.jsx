@@ -25,7 +25,7 @@ const Wrapper = styled.div`
 const LeftContainer = styled.div`
   border: 1px solid lightgray;
   border-radius: 15px;
-  height: 72vh;
+  height: 68vh;
   flex-basis: 19%;
   margin-right: 15px;
   @media screen and (max-width: 768px) {
@@ -151,6 +151,7 @@ const DatePost = styled.div`
   display: flex;
   flex-direction: column;
   padding: 25px;
+  padding-top: 9px;
 `;
 
 const Select = styled.select`
@@ -172,14 +173,40 @@ const JobType = styled.div`
   display: flex;
   flex-direction: column;
   padding: 25px;
+  padding-top: 9px;
 `;
+
+const CheckBoxContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-right: 4em;
+  
+`;
+const Salary= styled.div`
+padding: 9px 25px 25px 25px;
+
+`
+
+const ApplyFilter = styled.button`
+
+width: 9em;
+height: 3em;
+font-size: 1rem;
+border-radius: 5px;
+border:  none;
+color: white;
+background-color: #009c4c;
+position: relative;
+left: 7em;
+top: 2em;
+
+`
 
 const JobTypeInput = styled.input``;
 
 const InputDiv = styled.div`
-display: flex;
-
-`
+  display: flex;
+`;
 const SearchJob = () => {
   const jobCards = [];
   for (let i = 0; i < 60; i++) {
@@ -208,16 +235,45 @@ const SearchJob = () => {
           <JobType>
             <h3>Job Type</h3>
             <InputDiv>
-              <JobTypeInput type="radio" name="full_time" />
-              <Label htmlFor="full_time">Full Time</Label>
-              <JobTypeInput type="radio" />
-              <Label htmlFor="full_time">Internship</Label>
-              <JobTypeInput type="radio" />
-              <Label htmlFor="full_time">Work-From-Home</Label>
-              <JobTypeInput type="radio" />
-              <Label htmlFor="full_time">FreeLancing </Label>
+              <CheckBoxContainer>
+                <div>
+                  <JobTypeInput type="radio" name="full_time" />
+                  <Label htmlFor="full_time">Full Time</Label>
+                  
+                </div>
+                <br/>
+                 
+                <div>
+                  <JobTypeInput type="radio" />
+                  <Label htmlFor="full_time">Internship</Label>
+                </div>
+                
+              </CheckBoxContainer>
+              <CheckBoxContainer>
+                <div>
+                  <JobTypeInput type="radio" name="full_time" />
+                  <Label htmlFor="full_time">Full Time</Label>
+                </div>
+                <br/>
+                <div>
+                  <JobTypeInput type="radio" />
+                  <Label htmlFor="full_time">Internship</Label>
+                </div>
+              </CheckBoxContainer>
             </InputDiv>
           </JobType>
+          <hr/>
+      <Salary>
+
+        <h3>Salary Range</h3>
+        <JobTypeInput type="range"/>
+      </Salary>
+      <hr/>
+      <div>
+        <ApplyFilter type="submit">Apply Filter</ApplyFilter>
+      </div>
+
+
         </LeftContainer>
 
         <RightContainer>
