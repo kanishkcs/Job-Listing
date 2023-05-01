@@ -15,9 +15,7 @@ const Wrapper = styled.div`
   background-color: white;
   width: 100%;
 
-  @media screen and (max-width: 720px ) {
-    flex-direction: column;
-  }
+  
 `;
 
 const LeftContainer = styled.div`
@@ -26,9 +24,7 @@ const LeftContainer = styled.div`
 
 const MiddleContainer = styled.div`
   display: flex;
-  @media screen and (max-width: 720px ) {
-    display: none;
-  }
+  
 `;
 const RightContainer = styled.div`
 display: flex;

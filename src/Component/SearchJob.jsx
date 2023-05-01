@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   display: flex;
   margin-top: 6rem;
   position: absolute;
-  
+
   @media screen and (max-width: 768px) {
     padding: 4px;
 
@@ -33,13 +33,17 @@ const LeftContainer = styled.div`
   }
 `;
 
+const TopHeading = styled.div`
+  display: flex;
+  justify-content: space-around;
+`;
+
 const RightContainer = styled.div`
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  
-  height: 100vh;
 
+  height: 100vh;
 `;
 
 const NumberOfJobs = styled.h3`
@@ -55,7 +59,7 @@ const NumberOfJobs = styled.h3`
 const SearchDiv = styled.div`
   display: flex;
   width: 90%;
-  
+
   position: relative;
   flex-basis: 60px;
   @media screen and (max-width: 768px) {
@@ -65,7 +69,7 @@ const SearchDiv = styled.div`
 `;
 
 const Input = styled.input`
-height: 65px;
+  height: 65px;
   width: 90%;
   padding-left: 40px;
   border-radius: ${(props) =>
@@ -106,10 +110,8 @@ const SerachButton = styled.button`
 
 const JobListDiv = styled.div`
   flex-grow: 1;
-  overflow-y: scroll; 
-  overflow-x:hidden ;
-  
-  
+  overflow-y: scroll;
+  overflow-x: hidden;
 `;
 
 const SearchIcons = styled.img`
@@ -134,16 +136,89 @@ const LocationIcons = styled.img`
   }
 `;
 
-const SearchJob = () => {
+const FilterSpan = styled.span`
+  color: red;
+  margin-top: 1.3em;
+  cursor: pointer;
 
+  &:hover {
+    transform: scale(1.1);
+    color: #0b9e44;
+  }
+`;
+
+const DatePost = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+`;
+
+const Select = styled.select`
+  width: 21em;
+  height: 2.7rem;
+  border-radius: 7px;
+  font-size: 1rem;
+  padding: 10px;
+`;
+const Label = styled.label`
+  margin-bottom: 15px;
+`;
+const Option = styled.option`
+  font-size: 1.3rem;
+  padding: 10px;
+`;
+
+const JobType = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+`;
+
+const JobTypeInput = styled.input``;
+
+const InputDiv = styled.div`
+display: flex;
+
+`
+const SearchJob = () => {
   const jobCards = [];
-  for (let i = 0; i < 700; i++) {
+  for (let i = 0; i < 60; i++) {
     jobCards.push(<JobCard key={i} />);
   }
   return (
     <>
       <Wrapper>
-        <LeftContainer></LeftContainer>
+        <LeftContainer>
+          <TopHeading>
+            <h3>Filter</h3>
+            <FilterSpan>Clear All</FilterSpan>
+          </TopHeading>
+          <hr></hr>
+          <DatePost>
+            <h3>Date Posted</h3>
+            <Select>
+              <Option selected>Latest</Option>
+              <Option selected>This Week</Option>
+              <Option selected>This Month</Option>
+              <Option selected>This Year</Option>
+            </Select>
+          </DatePost>
+          <hr></hr>
+
+          <JobType>
+            <h3>Job Type</h3>
+            <InputDiv>
+              <JobTypeInput type="radio" name="full_time" />
+              <Label htmlFor="full_time">Full Time</Label>
+              <JobTypeInput type="radio" />
+              <Label htmlFor="full_time">Internship</Label>
+              <JobTypeInput type="radio" />
+              <Label htmlFor="full_time">Work-From-Home</Label>
+              <JobTypeInput type="radio" />
+              <Label htmlFor="full_time">FreeLancing </Label>
+            </InputDiv>
+          </JobType>
+        </LeftContainer>
 
         <RightContainer>
           <SearchDiv>
@@ -155,9 +230,7 @@ const SearchJob = () => {
             <SerachButton>Search</SerachButton>
           </SearchDiv>
           <NumberOfJobs>250 Jobs results</NumberOfJobs>
-          <JobListDiv>
-            {jobCards}
-          </JobListDiv>
+          <JobListDiv>{jobCards}</JobListDiv>
         </RightContainer>
       </Wrapper>
     </>
