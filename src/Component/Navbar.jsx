@@ -62,18 +62,18 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            to="job-page"
+            to="jobPage"
             className={`nav_links ${
-              url.pathname === "/job-page" ? "active" : ""
+              url.pathname === "/jobPage" ? "active" : ""
             }`}
           >
             Jobs
           </Link>
 
           <Link
-            to="job-details"
+            to="jobDetails"
             className={`nav_links ${
-              url.pathname === "/job-details" ? "active" : ""
+              url.pathname === "/jobDetails" ? "active" : ""
             }`}
           >
             Post a Job{" "}
