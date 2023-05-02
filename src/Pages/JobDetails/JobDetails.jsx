@@ -57,11 +57,11 @@ const JobDetails = () => {
           You will support our organization's efforts to encourage volunteering and contribute to the development of the community.</p>
         <Heading>Skills required</Heading>
         <div>
-        <Tags bgColor="#fff2e6" fontColor="#e2b066">HTML</Tags>
-        <Tags bgColor="#fdedf0" fontColor="#c57283">CSS</Tags>
-        <Tags bgColor="#fff2e6" fontColor="#e2b066">JavaScript</Tags>
-        <Tags bgColor="#fdedf0" fontColor="#c57283">Bootstrap</Tags>
-        
+          <Tags bgColor="#fff2e6" fontColor="#e2b066">HTML</Tags>
+          <Tags bgColor="#fdedf0" fontColor="#c57283">CSS</Tags>
+          <Tags bgColor="#fff2e6" fontColor="#e2b066">JavaScript</Tags>
+          <Tags bgColor="#fdedf0" fontColor="#c57283">Bootstrap</Tags>
+
         </div>
 
 
@@ -76,11 +76,11 @@ const JobDetails = () => {
         </ol>
         <p> *Women who want to start/restart their career can also apply </p>
         <Heading>Perks</Heading>
-        <Tags bgColor="#fdedf0" fontColor="#c57283">Certificate</Tags>
+        <Tags bgColor="#fff2e6" fontColor="#e2b066">Certificate</Tags>
         <Tags bgColor="#fdedf0" fontColor="#c57283">Letter of Recommendation</Tags>
-        <Tags bgColor="#fdedf0" fontColor="#c57283">5 days a week</Tags>
+        <Tags bgColor="#fff2e6" fontColor="#e2b066">5 days a week</Tags>
         <Tags bgColor="#fdedf0" fontColor="#c57283">Fexible work hours</Tags>
-        
+
         <Heading>Number of openings</Heading>
         <p>6</p>
 
