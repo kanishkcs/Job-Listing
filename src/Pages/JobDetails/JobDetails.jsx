@@ -11,12 +11,17 @@ justify-content: center;
 flex-direction: column;
 align-items:center;
 `
-const Tags = styled.div`
-color : black;
-width : 80px;
-height : 20px;
-background-color : grey;
-border-radius : 7px;
+const Tags = styled.button`
+width : 13rem;
+background-color :${(props) => props.bgColor}; 
+color: ${(props) => props.fontColor};
+border-radius : 8px;
+display:inline;
+padding:5px;
+border: none;
+border-radius:8px;
+margin-left : 30px;
+font-size: 1rem;
 `
 
 const Container = styled.div`
@@ -39,7 +44,7 @@ const JobDetails = () => {
 
 
 
-        <Heading>Full Stack Web Developer </Heading>
+        <Heading>Full Stack Web Developer work from home internship at the company  </Heading>
       </Wrapper>
       <JobCard />
 
@@ -51,11 +56,13 @@ const JobDetails = () => {
           you will also be supporting the organization by raising funds and encouraging your friend to accompany you in this internship.
           You will support our organization's efforts to encourage volunteering and contribute to the development of the community.</p>
         <Heading>Skills required</Heading>
-        <Tags className="skill_section">HTML</Tags>
-        <Tags className="skill_section">CSS</Tags>
-        <Tags className="skill_section">JavaScript</Tags>
-        <Tags className="skill_section">Bootstrap</Tags>
-
+        <div>
+        <Tags bgColor="#fff2e6" fontColor="#e2b066">HTML</Tags>
+        <Tags bgColor="#fdedf0" fontColor="#c57283">CSS</Tags>
+        <Tags bgColor="#fff2e6" fontColor="#e2b066">JavaScript</Tags>
+        <Tags bgColor="#fdedf0" fontColor="#c57283">Bootstrap</Tags>
+        
+        </div>
 
 
         <Heading>Who can Apply</Heading>
@@ -69,7 +76,11 @@ const JobDetails = () => {
         </ol>
         <p> *Women who want to start/restart their career can also apply </p>
         <Heading>Perks</Heading>
-        <p>Certificate   Letter of Recommendation   Flexible Work Hours     Informal Dress Code   5 days a week</p>
+        <Tags bgColor="#fdedf0" fontColor="#c57283">Certificate</Tags>
+        <Tags bgColor="#fdedf0" fontColor="#c57283">Letter of Recommendation</Tags>
+        <Tags bgColor="#fdedf0" fontColor="#c57283">5 days a week</Tags>
+        <Tags bgColor="#fdedf0" fontColor="#c57283">Fexible work hours</Tags>
+        
         <Heading>Number of openings</Heading>
         <p>6</p>
 
