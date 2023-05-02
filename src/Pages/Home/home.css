@@ -323,3 +323,19 @@ ul{
 
 
 
+
+@media screen  and (max-width:720px){
+.container_text h1{
+
+    font-size: 1.2rem;
+}
+
+.footer_col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+    
+}
+
+}

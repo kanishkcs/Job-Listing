@@ -14,6 +14,8 @@ const Wrapper = styled.div`
   position: fixed;
   background-color: white;
   width: 100%;
+
+  
 `;
 
 const LeftContainer = styled.div`
@@ -22,6 +24,7 @@ const LeftContainer = styled.div`
 
 const MiddleContainer = styled.div`
   display: flex;
+  
 `;
 const RightContainer = styled.div`
 display: flex;
@@ -59,18 +62,18 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            to="job-page"
+            to="jobPage"
             className={`nav_links ${
-              url.pathname === "/job-page" ? "active" : ""
+              url.pathname === "/jobPage" ? "active" : ""
             }`}
           >
             Jobs
           </Link>
 
           <Link
-            to="job-details"
+            to="jobDetails"
             className={`nav_links ${
-              url.pathname === "/job-details" ? "active" : ""
+              url.pathname === "/jobDetails" ? "active" : ""
             }`}
           >
             Post a Job{" "}

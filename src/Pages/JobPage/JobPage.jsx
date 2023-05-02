@@ -9,7 +9,7 @@ export const JobPage = () => {
   return (
     <>
       {/* Banner Section */}
-      
+      <div className="job_page_main">
       <div className="jobpage_banner_div">
         <div className="jobpage_heading_div">
           <h1 className="jobpage_banner_heading">Find Your Dream Job</h1>
@@ -24,7 +24,7 @@ export const JobPage = () => {
       </div>
       <SearchJob/>
      
-
+</div>
     </>
   );
 };
