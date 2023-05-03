@@ -1,5 +1,5 @@
 .jobpage_banner_div {
-    height: 210px;
+    height: 150px;
     background-color:#F6F8FC;
     padding-left: 30px;
     display: flex;
@@ -7,27 +7,32 @@
     position: relative;
     top: 80px;
     z-index: -10  ;
-    
+    overflow: hidden !important;
+    width: 100vw;
   }
  
   
   .jobpage_banner_heading {
-    font-size: 3vw;
+    font-size: 1.5vw;
     margin-bottom: 10px;
   }
   
   .jobpage_banner_div small {
     color: rgb(90, 87, 87);
+    font-size: .7vw;
   }
   
   .jobpage_banner_logo {
-    height: 210px;
+    height: 150px;
   }
   
   .jobpage_heading_div {
     padding-top: 1%;
   }
 
-  
+  .job_page_main{
+    position: fixed;
+    top: 4%;
+  }
   
  

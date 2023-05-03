@@ -29,7 +29,7 @@ const Logo = styled.div``;
 
 const Heading = styled.h1`
   margin-bottom: 9px;
-  font-size: 1.3rem;
+  font-size: 1rem;
   @media screen and (max-width: 768px) {
     font-size: 0.8rem;
   }
@@ -37,7 +37,7 @@ const Heading = styled.h1`
 const Tags = styled.button`
   border: none;
   border-radius: 8px;
-  font-size: 1rem;
+  font-size: .8.5rem;
   width: 7rem;
   padding: 5px;
   display: inline;
@@ -68,7 +68,7 @@ const DiscriptionDiv = styled.div`
 const DiscriptionList = styled.li`
 
 @media screen and (max-width: 768px) {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
 `;

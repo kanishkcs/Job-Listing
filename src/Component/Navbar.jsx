@@ -45,7 +45,12 @@ const Heading = styled.h1`
 
 const Navbar = () => {
   let url = useLocation();
-
+  const changeOverflow = ()=>{
+    document.body.classList.add("onOverflow");
+  }
+  const removeOverflow = ()=>{
+    document.body.classList.remove("onOverflow")
+  }
   return (
     <>
       <Wrapper>
@@ -58,6 +63,7 @@ const Navbar = () => {
           <Link
             to="/"
             className={`nav_links ${url.pathname === "/" ? "active" : ""}`}
+        
           >
             Home
           </Link>
@@ -66,6 +72,7 @@ const Navbar = () => {
             className={`nav_links ${
               url.pathname === "/jobPage" ? "active" : ""
             }`}
+           
           >
             Jobs
           </Link>
@@ -75,6 +82,7 @@ const Navbar = () => {
             className={`nav_links ${
               url.pathname === "/jobDetails" ? "active" : ""
             }`}
+           
           >
             Post a Job{" "}
           </Link>
@@ -83,6 +91,7 @@ const Navbar = () => {
             className={`nav_links ${
               url.pathname === "/search" ? "active" : ""
             }`}
+            
           >
             {" "}
             Search

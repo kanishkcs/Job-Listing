@@ -3,7 +3,12 @@
 body{
     padding: 0;
     margin: 0;
+font-size: small;
 
+}
+
+.onOverflow{
+    overflow: hidden;
 }
 ::-webkit-scrollbar {
     display: none;

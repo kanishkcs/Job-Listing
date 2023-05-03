@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import JobCard from "./JobCard";
 
@@ -180,38 +180,42 @@ const CheckBoxContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-right: 4em;
-  
 `;
-const Salary= styled.div`
-padding: 9px 25px 25px 25px;
-
-`
+const Salary = styled.div`
+  padding: 9px 25px 25px 25px;
+`;
 
 const ApplyFilter = styled.button`
-
-width: 9em;
-height: 3em;
-font-size: 1rem;
-border-radius: 5px;
-border:  none;
-color: white;
-background-color: #009c4c;
-position: relative;
-left: 7em;
-top: 2em;
-
-`
+  width: 9em;
+  height: 3em;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: #009c4c;
+  position: relative;
+  left: 7em;
+  top: 2em;
+`;
 
 const JobTypeInput = styled.input``;
 
 const InputDiv = styled.div`
   display: flex;
 `;
+
 const SearchJob = () => {
   const jobCards = [];
   for (let i = 0; i < 60; i++) {
     jobCards.push(<JobCard key={i} />);
   }
+  const [rangeValue, setValue] = useState(100);
+  const [range2Value , set2Value] = useState(150);
+  const check = (event) => {
+    setValue(event.target.value);
+    set2Value(rangeValue);
+  };
+
   return (
     <>
       <Wrapper>
@@ -239,22 +243,20 @@ const SearchJob = () => {
                 <div>
                   <JobTypeInput type="radio" name="full_time" />
                   <Label htmlFor="full_time">Full Time</Label>
-                  
                 </div>
-                <br/>
-                 
+                <br />
+
                 <div>
                   <JobTypeInput type="radio" />
                   <Label htmlFor="full_time">Internship</Label>
                 </div>
-                
               </CheckBoxContainer>
               <CheckBoxContainer>
                 <div>
                   <JobTypeInput type="radio" name="full_time" />
                   <Label htmlFor="full_time">Full Time</Label>
                 </div>
-                <br/>
+                <br />
                 <div>
                   <JobTypeInput type="radio" />
                   <Label htmlFor="full_time">Internship</Label>
@@ -262,18 +264,24 @@ const SearchJob = () => {
               </CheckBoxContainer>
             </InputDiv>
           </JobType>
-          <hr/>
-      <Salary>
-
-        <h3>Salary Range</h3>
-        <JobTypeInput type="range"/>
-      </Salary>
-      <hr/>
-      <div>
-        <ApplyFilter type="submit">Apply Filter</ApplyFilter>
-      </div>
-
-
+          <hr />
+          <Salary>
+            <h3>Salary Range</h3>
+            <h2>
+              {rangeValue}k ---{range2Value}k
+            </h2>
+            <JobTypeInput
+              onInput={check}
+              min={50}
+              max={200}
+              type="range"
+              id="range"
+            />
+          </Salary>
+          <hr />
+          <div>
+            <ApplyFilter type="submit">Apply Filter</ApplyFilter>
+          </div>
         </LeftContainer>
 
         <RightContainer>
