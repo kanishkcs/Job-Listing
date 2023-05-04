@@ -27,7 +27,7 @@ font-size: 1rem;
 
 const Container = styled.div`
 width: 50%;
-height: 1150px;
+height: 1350px;
 border: 1px solid lightgray;
 border-radius: 5px;
 padding: 0 40px 0 40px;
@@ -50,22 +50,23 @@ const JobDetails = () => {
 
         <Heading>Full Stack Web Developer work from home internship at the First Step  </Heading>
       </Wrapper>
-      
+
 
       <Container>
-      <JobCard />
+        <JobCard />
         <Heading>About the Company Role</Heading>
         <p>Are you looking for an opportunity to help empower marginalized communities? We are seeking an enthusiastic, motivated, and reliable Volunteering Intern to join our team at NayePankh Foundation.
           If you are compassionate and enjoy working with people, this is the job for you.
           As a volunteering intern, you will be given four different tasks for different weeks, you will be required to do social work near your area and spread positivity, and share the photos and videos of that social work on your social media,
           you will also be supporting the organization by raising funds and encouraging your friend to accompany you in this internship.
           You will support our organization's efforts to encourage volunteering and contribute to the development of the community.</p>
+
         <Heading>Skills required</Heading>
         <div>
-          <Tags bgColor="#fff2e6" fontColor="#e2b066">HTML</Tags>
+          <Tags bgColor="#89ABE3" fontColor="#53331F">HTML</Tags>
           <Tags bgColor="#fdedf0" fontColor="#c57283">CSS</Tags>
-          <Tags bgColor="#fff2e6" fontColor="#e2b066">JavaScript</Tags>
-          <Tags bgColor="#fdedf0" fontColor="#c57283">Bootstrap</Tags>
+          <Tags bgColor="#89ABE3" fontColor="#53331F">JavaScript</Tags>
+
 
         </div>
 
@@ -80,11 +81,13 @@ const JobDetails = () => {
           <List>Are from or open to relocate to Gurgaon and neighbouring cities  </List>
         </ol>
         <p> *Women who want to start/restart their career can also apply </p>
+
+
         <Heading>Perks</Heading>
-        <Tags bgColor="#fff2e6" fontColor="#e2b066">Certificate</Tags>
+        <Tags bgColor="#89ABE3" fontColor="#53331F">Certificate</Tags>
         <Tags bgColor="#fdedf0" fontColor="#c57283">Letter of Recommendation</Tags>
-        <Tags bgColor="#fff2e6" fontColor="#e2b066">5 days a week</Tags>
-        <Tags bgColor="#fdedf0" fontColor="#c57283">Fexible work hours</Tags>
+        <Tags bgColor="#89ABE3" fontColor="#53331F">5 days a week</Tags>
+
 
         <Heading>Number of openings</Heading>
         <p>6</p>
