@@ -1,29 +1,33 @@
 .skillBtn {
-    background-color: rgb(0, 156, 76);
-    ;
-    border: 1px solid #777;
-    border-radius: 4px;
-    font-family: inherit;
-    font-size: 1rem;
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin: auto;
-    color: white;
-    width: 9em;
-    height: 3em;
-    line-height: 24px;
+  background-color: rgb(0, 156, 76);
+  position: relative;
+  top: -20px;
 
+  border: 1px solid #777;
+  border-radius: 4px;
 
+  font-size: 1rem;
+  display: block;
 
+  margin: auto;
+
+  color: white;
+  width: 9em;
+  height: 3em;
+  line-height: 24px;
 }
 
 .skillBtn:hover {
-    background-color: #3ad60b
+  background-color: #3ad60b;
 }
 
 .skillBtn:active {
-    background-color: #3e8e41;
-    transform: translateY(4px);
+  background-color: #3e8e41;
+  transform: translateY(4px);
+}
 
+@media screen and (max-width: 750px) {
+  .job_details_card {
+    color: red;
+  }
 }
