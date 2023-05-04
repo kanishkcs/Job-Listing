@@ -109,11 +109,7 @@ const Home = () => {
       </div>
       <div className=" grid_container5">  
         <div className="grid-item">
-<<<<<<< HEAD 
-          <Button colors="#146C94">
-=======
           <Button colors="#F6F1F1">
->>>>>>> 9eb15f49d646ff9c80e46a8d09be0b8d57555d09
             <GridImage src={ToolIcon} />
           </Button>
           <GridHeading>Web Developer</GridHeading>
