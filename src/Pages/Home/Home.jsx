@@ -63,11 +63,11 @@ const Home = () => {
 
           <h1 className=" box1Text"> Find the most exciting jobs.</h1>
           <h4 className="last_heading">
-            Leverage agile framworks to provide a robust synopsis for high level
+            Leverage agile frameworks to provide a robust synopsis for high level
             overviews.iterative to
           </h4>
         </div>
-        <div className="box1 ">
+        <div className="box1">
           <img className="box1Image"
             src=" https://i0.wp.com/gbsn.org/wp-content/uploads/2022/01/gbsn-homepage-graphic-1.png?resize=768%2C768&ssl=1"
             alt=""
@@ -107,9 +107,13 @@ const Home = () => {
           overview to start.
         </h3>
       </div>
-      <div className=" grid_container5">
+      <div className=" grid_container5">  
         <div className="grid-item">
+<<<<<<< HEAD
           <Button colors="#146C94">
+=======
+          <Button colors="#F6F1F1">
+>>>>>>> 9eb15f49d646ff9c80e46a8d09be0b8d57555d09
             <GridImage src={ToolIcon} />
           </Button>
           <GridHeading>Web Developer</GridHeading>
@@ -239,7 +243,7 @@ const Home = () => {
               <h4>Product</h4>
               <ul>
                 <li>
-                  <a href="#">Festure</a>
+                  <a href="#">Features</a>
                 </li>
                 <li>
                   <a href="#">Pricing</a>{" "}
@@ -279,7 +283,7 @@ const Home = () => {
                   <a href="#"> Privacy Policy</a>{" "}
                 </li>
                 <li>
-                  <a href="#">Terms &Conditions</a>
+                  <a href="#">Terms & Conditions</a>
                 </li>
                 <li>
                   <a href="#">Return Policy</a>

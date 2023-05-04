@@ -14,6 +14,8 @@ const Wrapper = styled.div`
   position: fixed;
   background-color: white;
   width: 100%;
+
+  
 `;
 
 const LeftContainer = styled.div`
@@ -22,6 +24,7 @@ const LeftContainer = styled.div`
 
 const MiddleContainer = styled.div`
   display: flex;
+  
 `;
 const RightContainer = styled.div`
 display: flex;
@@ -42,7 +45,12 @@ const Heading = styled.h1`
 
 const Navbar = () => {
   let url = useLocation();
-
+  const changeOverflow = ()=>{
+    document.body.classList.add("onOverflow");
+  }
+  const removeOverflow = ()=>{
+    document.body.classList.remove("onOverflow")
+  }
   return (
     <>
       <Wrapper>
@@ -55,23 +63,26 @@ const Navbar = () => {
           <Link
             to="/"
             className={`nav_links ${url.pathname === "/" ? "active" : ""}`}
+        
           >
             Home
           </Link>
           <Link
-            to="job-page"
+            to="jobPage"
             className={`nav_links ${
-              url.pathname === "/job-page" ? "active" : ""
+              url.pathname === "/jobPage" ? "active" : ""
             }`}
+           
           >
             Jobs
           </Link>
 
           <Link
-            to="job-details"
+            to="jobDetails"
             className={`nav_links ${
-              url.pathname === "/job-details" ? "active" : ""
+              url.pathname === "/jobDetails" ? "active" : ""
             }`}
+           
           >
             Post a Job{" "}
           </Link>
@@ -80,6 +91,7 @@ const Navbar = () => {
             className={`nav_links ${
               url.pathname === "/search" ? "active" : ""
             }`}
+            
           >
             {" "}
             Search
