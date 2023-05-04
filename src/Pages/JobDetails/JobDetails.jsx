@@ -26,7 +26,12 @@ font-size: 1rem;
 `
 
 const Container = styled.div`
-
+width: 50%;
+height: 1150px;
+border: 1px solid lightgray;
+border-radius: 5px;
+padding: 0 40px 0 40px;
+margin-left:425px;
 `
 
 const Heading = styled.h2`
@@ -43,13 +48,12 @@ const JobDetails = () => {
     <>
       <Wrapper>
 
-
-
         <Heading>Full Stack Web Developer work from home internship at the First Step  </Heading>
       </Wrapper>
       <JobCard />
 
       <Container>
+
         <Heading>About the Company Role</Heading>
         <p>Are you looking for an opportunity to help empower marginalized communities? We are seeking an enthusiastic, motivated, and reliable Volunteering Intern to join our team at NayePankh Foundation.
           If you are compassionate and enjoy working with people, this is the job for you.
@@ -86,6 +90,7 @@ const JobDetails = () => {
         <p>6</p>
 
         <button className="skillBtn" type="submit" value="submit" >Apply Now</button>
+
       </Container>
 
     </>

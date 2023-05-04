@@ -116,7 +116,7 @@ const JobCard = () => {
         </TopContainer>
         <DiscriptionDiv>
           <div>
-            <DiscriptionList>Handel Backend and Front End Both</DiscriptionList>
+            <DiscriptionList>Handle Backend and Front End Both</DiscriptionList>
             <DiscriptionList>Restful API </DiscriptionList>
             <DiscriptionList>
               Knowledge of SQL and NoSQL Database
