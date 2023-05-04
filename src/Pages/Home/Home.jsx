@@ -19,6 +19,7 @@ import GoogleIcon from "../../assets/google.png"
 import AmazonIcon from "../../assets/amazon.png"
 import FlipkartIcon from "../../assets/flipkartpng.png"
 
+
 const Button = styled.button`
   background-color: ${(props) => props.colors};
   width: 55px;
@@ -79,19 +80,19 @@ const Home = () => {
       </div>
       <div className="container3">
         <div className="content3">
-          <GetStarted>
+          <GetStarted className="item">
             <GetStartedLogo src={AppleIcon}/>
             <figcaption>Apple</figcaption>
           </GetStarted>
-          <GetStarted>
+          <GetStarted className="item">
             <GetStartedLogo src={GoogleIcon}/>
             <figcaption>Google</figcaption>
           </GetStarted>
-          <GetStarted>
+          <GetStarted className="item">
             <GetStartedLogo src={AmazonIcon}/>
             <figcaption>Amazon</figcaption>
           </GetStarted>
-          <GetStarted>
+          <GetStarted className="item">
             <GetStartedLogo src={FlipkartIcon}/>
             <figcaption>Flipkart</figcaption>
           </GetStarted>
@@ -187,7 +188,7 @@ const Home = () => {
 
               <div className="contact_us_div">
                 <div className="contact_us_logo_div">
-                  <img src={MessageIcon}></img>
+                  {/* <img src={MessageIcon}></img> */}
                 </div>
                 <div className="contact_us_right_div">
                   <div className="contact_us_heading">
@@ -200,9 +201,11 @@ const Home = () => {
               </div>
 
               <div className="follow_us_div">
-                <h4>Follow us</h4>
-                <div className="socialmedia_icon_div">
+                <h4 className="socialitem">Follow us</h4>
+                <div className="socialitem socialmedia_icon_div">
                   <img src={TwitterIcon} />
+                  
+                  
                   
                  
                 </div>
@@ -220,7 +223,7 @@ const Home = () => {
               <h4>company</h4>
               <ul>
                 <li>
-                  <a href="#">About Us</a>{" "}
+                  <a href="#">About Us</a>
                 </li>
                 <li>
                   <a href="#">Contact us</a>{" "}

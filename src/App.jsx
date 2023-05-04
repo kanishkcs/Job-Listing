@@ -10,12 +10,14 @@ import { Route,Routes } from "react-router-dom";
 import PostJob from "./Pages/Post Job/PostJob";
 
 
+
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
     <Navbar/>
+    
   <Routes>
 
     <Route path='/' element={<Home/>}/>
