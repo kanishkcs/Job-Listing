@@ -50,10 +50,10 @@ const JobDetails = () => {
 
         <Heading>Full Stack Web Developer work from home internship at the First Step  </Heading>
       </Wrapper>
-      <JobCard />
+      
 
       <Container>
-
+      <JobCard />
         <Heading>About the Company Role</Heading>
         <p>Are you looking for an opportunity to help empower marginalized communities? We are seeking an enthusiastic, motivated, and reliable Volunteering Intern to join our team at NayePankh Foundation.
           If you are compassionate and enjoy working with people, this is the job for you.
