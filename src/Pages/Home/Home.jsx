@@ -61,7 +61,7 @@ const Home = () => {
 
           <h1 className=" box1Text"> Find the most exciting jobs.</h1>
           <h4 className="last_heading">
-            Leverage agile framworks to provide a robust synopsis for high level
+            Leverage agile frameworks to provide a robust synopsis for high level
             overviews.iterative to
           </h4>
         </div>
@@ -235,7 +235,7 @@ const Home = () => {
               <h4>Product</h4>
               <ul>
                 <li>
-                  <a href="#">Festure</a>
+                  <a href="#">Features</a>
                 </li>
                 <li>
                   <a href="#">Pricing</a>{" "}
@@ -275,7 +275,7 @@ const Home = () => {
                   <a href="#"> Privacy Policy</a>{" "}
                 </li>
                 <li>
-                  <a href="#">Terms &Conditions</a>
+                  <a href="#">Terms & Conditions</a>
                 </li>
                 <li>
                   <a href="#">Return Policy</a>

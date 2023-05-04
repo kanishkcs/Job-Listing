@@ -6,6 +6,7 @@ import JobCard from '../../Component/JobCard'
 
 const Wrapper = styled.div`
 
+
 display:flex;
 justify-content: center;
 flex-direction: column;
@@ -29,7 +30,7 @@ const Container = styled.div`
 `
 
 const Heading = styled.h2`
-
+margin-top:100px;
 `
 
 const List = styled.li`
@@ -44,7 +45,7 @@ const JobDetails = () => {
 
 
 
-        <Heading>Full Stack Web Developer work from home internship at the company  </Heading>
+        <Heading>Full Stack Web Developer work from home internship at the First Step  </Heading>
       </Wrapper>
       <JobCard />
 
@@ -84,6 +85,7 @@ const JobDetails = () => {
         <Heading>Number of openings</Heading>
         <p>6</p>
 
+        <button className="skillBtn" type="submit" value="submit" >Apply Now</button>
       </Container>
 
     </>
