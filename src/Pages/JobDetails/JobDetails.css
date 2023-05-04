@@ -26,8 +26,5 @@
   transform: translateY(4px);
 }
 
-@media screen and (max-width: 750px) {
-  .job_details_card {
-    color: red;
-  }
-}
+
+

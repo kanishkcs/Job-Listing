@@ -27,17 +27,13 @@ const Tags = styled.button`
 `;
 
 const Container = styled.div`
-  max-width: 50%;
-  height: auto;
-  border: 1px solid lightgray;
-  border-radius: 5px;
-  padding: 0 40px 0 40px;
-margin: 0px 0px 0px 10rem ;
-  min-width: 340px !important;
-  @media screen and (max-width: 720px) {
-    margin-left: 25px;
-  }
-`;
+width: 50%;
+height: 1150px;
+border: 1px solid lightgray;
+border-radius: 5px;
+padding: 0 40px 0 40px;
+
+`
 
 const Heading = styled.h2`
     
@@ -49,61 +45,44 @@ const JobDetails = () => {
   return (
     <>
       <Wrapper>
-        <Heading>
-          Full Stack Web Developer work from home internship at the First Step{" "}
-        </Heading>
 
-        <Container>
-          <JobCard className="job_details_card" />
-          <Heading>About the Company Role</Heading>
-          <p>
-            Are you looking for an opportunity to help empower marginalized
-            communities? We are seeking an enthusiastic, motivated, and reliable
-            Volunteering Intern to join our team at NayePankh Foundation. If you
-            are compassionate and enjoy working with people, this is the job for
-            you.  
-          </p>
-          <Heading>Skills required</Heading>
-          <div>
-            <Tags bgColor="#fff2e6" fontColor="#e2b066">
-              HTML
-            </Tags>
-            <Tags bgColor="#fdedf0" fontColor="#c57283">
-              CSS
-            </Tags>
-            <Tags bgColor="#fff2e6" fontColor="#e2b066">
-              JavaScript
-            </Tags>
-            <Tags bgColor="#fdedf0" fontColor="#c57283">
-              Bootstrap
-            </Tags>
-          </div>
+        <Heading>Full Stack Web Developer work from home internship at the First Step  </Heading>
+      
+      
 
-          <Heading>Who can Apply</Heading>
-          <p>Canditates who can apply</p>
-          <ol>
-            <List>Are available for full-time(in office ) internship</List>
-            <List>
-              Can start internship between 4th May'23 and 8th June'23{" "}
-            </List>
-            <List>Are available for the duration of 6 months</List>
-            <List> Have relevant skills and interests </List>
-            
-          </ol>
-          
-          <Heading>Perks</Heading>
-          <Tags bgColor="#fff2e6" fontColor="#e2b066">
-            Certificate
-          </Tags>
-          <Tags bgColor="#fdedf0" fontColor="#c57283">
-            Letter of Recommendation
-          </Tags>
-          <Tags bgColor="#fff2e6" fontColor="#e2b066">
-            5 days a week
-          </Tags>
-          <Tags bgColor="#fdedf0" fontColor="#c57283">
-            Fexible work hours
-          </Tags>
+      <Container>
+      <JobCard />
+        <Heading>About the Company Role</Heading>
+        <p>Are you looking for an opportunity to help empower marginalized communities? We are seeking an enthusiastic, motivated, and reliable Volunteering Intern to join our team at NayePankh Foundation.
+          If you are compassionate and enjoy working with people, this is the job for you.
+          As a volunteering intern, you will be given four different tasks for different weeks, you will be required to do social work near your area and spread positivity, and share the photos and videos of that social work on your social media,
+          you will also be supporting the organization by raising funds and encouraging your friend to accompany you in this internship.
+          You will support our organization's efforts to encourage volunteering and contribute to the development of the community.</p>
+        <Heading>Skills required</Heading>
+        <div>
+          <Tags bgColor="#fff2e6" fontColor="#e2b066">HTML</Tags>
+          <Tags bgColor="#fdedf0" fontColor="#c57283">CSS</Tags>
+          <Tags bgColor="#fff2e6" fontColor="#e2b066">JavaScript</Tags>
+          <Tags bgColor="#fdedf0" fontColor="#c57283">Bootstrap</Tags>
+
+        </div>
+
+
+        <Heading>Who can Apply</Heading>
+        <p>Canditates who can apply</p>
+        <ol>
+          <List>Are available for full-time(in office ) internship</List>
+          <List>Can start internship between 4th May'23 and 8th June'23 </List>
+          <List>Are available for the duration of 6 months</List>
+          <List> Have relevant skills and interests </List>
+          <List>Are from or open to relocate to Gurgaon and neighbouring cities  </List>
+        </ol>
+        <p> *Women who want to start/restart their career can also apply </p>
+        <Heading>Perks</Heading>
+        <Tags bgColor="#fff2e6" fontColor="#e2b066">Certificate</Tags>
+        <Tags bgColor="#fdedf0" fontColor="#c57283">Letter of Recommendation</Tags>
+        <Tags bgColor="#fff2e6" fontColor="#e2b066">5 days a week</Tags>
+        <Tags bgColor="#fdedf0" fontColor="#c57283">Fexible work hours</Tags>
 
           <Heading>Number of openings</Heading>
           <p>6</p>
