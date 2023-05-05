@@ -18,6 +18,7 @@ import AppleIcon from "../../assets/apple.png"
 import GoogleIcon from "../../assets/google.png"
 import AmazonIcon from "../../assets/amazon.png"
 import FlipkartIcon from "../../assets/flipkartpng.png"
+import BusinessIcon from "../../assets/Business deal.gif"
 
 
 const Button = styled.button`
@@ -68,8 +69,8 @@ const Home = () => {
         </div>
         <div className="box1">
           <img className="box1Image"
-            src=" https://i0.wp.com/gbsn.org/wp-content/uploads/2022/01/gbsn-homepage-graphic-1.png?resize=768%2C768&ssl=1"
-            alt=""
+            src={BusinessIcon}
+            alt="loading "
             width="700"
             height="700"
           />
@@ -100,11 +101,11 @@ const Home = () => {
 
         <h1 className="container4">Explore by category</h1>
 
-        <h3 className="last_line">
+        <h2 className="last_line">
           {" "}
           Leverage agile frameworks to provide a robust synopsis for high level
           overview to start.
-        </h3>
+        </h2>
       </div>
       <div className=" grid_container5">  
         <div className="grid-item">
