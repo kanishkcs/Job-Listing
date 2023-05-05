@@ -14,12 +14,11 @@ import CustomerSupportIcon from "../../assets/customer-support.png";
 import ProjectIcon from "../../assets/project-management.png";
 import UserIcon from "../../assets/user.png";
 import Design from "../../assets/web-design.png";
-import AppleIcon from "../../assets/apple.png"
-import GoogleIcon from "../../assets/google.png"
-import AmazonIcon from "../../assets/amazon.png"
-import FlipkartIcon from "../../assets/flipkartpng.png"
-import BusinessIcon from "../../assets/Business deal.gif"
-
+import AppleIcon from "../../assets/apple.png";
+import GoogleIcon from "../../assets/google.png";
+import AmazonIcon from "../../assets/amazon.png";
+import FlipkartIcon from "../../assets/flipkartpng.png";
+import BusinessIcon from "../../assets/Business deal.gif";
 
 const Button = styled.button`
   background-color: ${(props) => props.colors};
@@ -27,6 +26,9 @@ const Button = styled.button`
   height: 55px;
   border-radius: 7px;
   cursor: pointer;
+  border: 1px solid lightgray;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 `;
 
 const GridImage = styled.img`
@@ -40,16 +42,16 @@ const GridSmall = styled.span`
   color: gray;
 `;
 
-
 const GetStarted = styled.figure`
-display: flex;
-font-size: 1.7rem;
-color: gray;
-`
+  display: flex;
+  font-size: 1.7rem;
+  color: gray;
+`;
 
 const GetStartedLogo = styled.img`
-width: 34px;
-`
+  width: 34px;
+  margin-right: 8px;
+`;
 
 const Home = () => {
   return (
@@ -63,12 +65,13 @@ const Home = () => {
 
           <h1 className=" box1Text"> Find the most exciting jobs.</h1>
           <h4 className="last_heading">
-            Leverage agile frameworks to provide a robust synopsis for high level
-            overviews.iterative to
+            Leverage agile frameworks to provide a robust synopsis for high
+            level overviews.iterative to
           </h4>
         </div>
-        <div className="box1">
-          <img className="box1Image"
+        <div className="box1 rotate-container">
+          <img
+            className="box1Image "
             src={BusinessIcon}
             alt="loading "
             width="700"
@@ -77,37 +80,39 @@ const Home = () => {
         </div>
       </div>
       <div className="container2">
-        <h1 >Get hired in top companies</h1>
+        <h1>Get hired in top companies</h1>
       </div>
       <div className="container3">
         <div className="content3">
           <GetStarted className="item">
-            <GetStartedLogo src={AppleIcon}/>
+            <GetStartedLogo src={AppleIcon} />
             <figcaption>Apple</figcaption>
           </GetStarted>
           <GetStarted className="item">
-            <GetStartedLogo src={GoogleIcon}/>
+            <GetStartedLogo src={GoogleIcon} />
             <figcaption>Google</figcaption>
           </GetStarted>
           <GetStarted className="item">
-            <GetStartedLogo src={AmazonIcon}/>
+            <GetStartedLogo src={AmazonIcon} />
             <figcaption>Amazon</figcaption>
           </GetStarted>
           <GetStarted className="item">
-            <GetStartedLogo src={FlipkartIcon}/>
+            <GetStartedLogo src={FlipkartIcon} />
             <figcaption>Flipkart</figcaption>
           </GetStarted>
         </div>
-
-        <h1 className="container4">Explore by category</h1>
-
+      </div>
+      <div className="container4">
+      <h1 >Explore by category</h1>
+        
         <h2 className="last_line">
           {" "}
           Leverage agile frameworks to provide a robust synopsis for high level
           overview to start.
         </h2>
       </div>
-      <div className=" grid_container5">  
+      
+      <div className=" grid_container5">
         <div className="grid-item">
           <Button colors="#F6F1F1">
             <GridImage src={ToolIcon} />
@@ -205,10 +210,6 @@ const Home = () => {
                 <h4 className="socialitem">Follow us</h4>
                 <div className="socialitem socialmedia_icon_div">
                   <img src={TwitterIcon} />
-                  
-                  
-                  
-                 
                 </div>
               </div>
 
@@ -216,7 +217,6 @@ const Home = () => {
                 <a href="#">
                   {" "}
                   <i className="fab fa-facebook-f"></i>
-                  
                 </a>
               </div>
             </div>
