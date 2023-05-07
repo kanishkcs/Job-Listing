@@ -6,7 +6,7 @@ import Home from "./Pages/Home/Home";
 import JobDetails from "./Pages/JobDetails/JobDetails";
 import { JobPage } from "./Pages/JobPage/JobPage";
 import Navbar from "./Component/Navbar";
-import { Route,Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import PostJob from "./Pages/Post Job/PostJob";
 
 
@@ -16,19 +16,19 @@ function App() {
 
   return (
     <>
-    
 
-    <Navbar/>
-    
-  <Routes>
 
-    <Route path='/' element={<Home/>}/>
-    <Route path='/jobPage' element={<JobPage/>}/>
-    <Route path='/jobDetails' element={<JobDetails/>}/>
-    
+      <Navbar />
 
-    
-  </Routes>
+      <Routes>
+
+        <Route path='/' element={<Home />} />
+        <Route path='/jobPage' element={<JobPage />} />
+        <Route path='/jobDetails' element={<JobDetails />} />
+
+
+
+      </Routes>
     </>
   );
 }

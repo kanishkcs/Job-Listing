@@ -34,21 +34,27 @@
 }
 
 .box {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  background-color: rgba(209, 237, 244, 0.894);
-}
-
-.box1 {
-  padding: 20%;
+  display: flex;
   height: 100vh;
+  background-color: rgba(209, 237, 244, 0.894);
+ position: relative;
+ top:120px;
 }
 
 .box1 {
+  flex: 4;
   animation: slide-in 1000ms;
   animation-iteration-count: 2s;
   transition: 1s all ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 10rem;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  
+  align-items: center;
 }
 
 @keyframes slide-in {
@@ -65,8 +71,14 @@
 
 .box1Image {
   mix-blend-mode: multiply;
-  margin-left: auto;
-  margin-top: 200px;
+
+  animation: animateY 2s ease infinite alternate;
+}
+
+@keyframes animateY {
+  to {
+    transform: translate(0, 70px);
+  }
 }
 
 .above_heading {
@@ -76,7 +88,6 @@
   font-size: 1.2rem;
   animation: slider-in 3000ms;
   animation-delay: 4s;
-  animation-iteration-count: infinite;
 }
 
 @keyframes slider-in {
@@ -203,6 +214,11 @@
   
 
 }*/
+.main_right {
+  display: flex;
+  flex: 3;
+  align-items: center;
+}
 
 .item3 li {
   display: inline;
@@ -233,22 +249,22 @@
 } */
 
 .grid_container5 {
-margin-bottom: 4rem;
+  margin-bottom: 4rem;
   display: grid;
   position: relative;
   left: 22%;
-  
+
   grid-template-columns: repeat(4, 17rem);
 }
 
 .grid-item {
   border: 1px solid lightgray;
-margin: 4rem 1rem 0 2rem;
+  margin: 4rem 1rem 0 2rem;
   text-align: center;
   font-size: 25px;
   cursor: pointer;
-height: 16rem;
-padding: 20px;
+  height: 16rem;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -436,17 +452,23 @@ ul {
   .row {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    /* justify-content: end; */
-    /* text-align: center; */
-    /* margin-left:40%; */
+    
     margin-top: 10vh;
   }
   .grid_container5 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    left: 0;
   }
 
   .last_line {
     text-align: center;
+  }
+
+  .main_right{
+    display: none;
+  }
+  .box1{
+    padding-left: 20px;
   }
 }

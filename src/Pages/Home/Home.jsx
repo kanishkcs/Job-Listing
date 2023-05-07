@@ -18,7 +18,7 @@ import AppleIcon from "../../assets/apple.png";
 import GoogleIcon from "../../assets/google.png";
 import AmazonIcon from "../../assets/amazon.png";
 import FlipkartIcon from "../../assets/flipkartpng.png";
-import BusinessIcon from "../../assets/Business deal.gif";
+import BusinessIcon from "../../assets/Buisness.png";
 
 const Button = styled.button`
   background-color: ${(props) => props.colors};
@@ -58,6 +58,7 @@ const Home = () => {
     <>
       <div className="box">
         <div className="box1">
+        <div>
           <span className="above_heading">
             {" "}
             #4923 jobs are avaiable right now
@@ -68,8 +69,9 @@ const Home = () => {
             Leverage agile frameworks to provide a robust synopsis for high
             level overviews.iterative to
           </h4>
+          </div>
         </div>
-        <div className="box1 rotate-container">
+        <div className="rotate-container main_right">
           <img
             className="box1Image "
             src={BusinessIcon}

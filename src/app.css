@@ -4,6 +4,7 @@ body{
     padding: 0;
     margin: 0;
 font-size: small;
+overflow-x: hidden;
 
 }
 
@@ -47,31 +48,3 @@ h1{
 color: #0b9e44  ;
 }
 
-/* .container{
-    
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    justify-content:space-evenly;
-}
-ul{
-    display: flex;
-
-    gap:10px;
-}
-
-.Mlogo{
-    display: grid; 
-    grid-template-columns: repeat(2,1fr);
-    gap:10px;
-
-}
-@media only screen and (max-width:480px) {
-    .brand{
-        display:none;
-        
-    }
-    .container{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-    }
-} */
