@@ -116,56 +116,56 @@ const Home = () => {
       
       <div className=" grid_container5">
         <div className="grid-item">
-          <Button colors="#F6F1F1">
+          <Button colors="#5C469C">
             <GridImage src={ToolIcon} />
           </Button>
           <GridHeading>Web Developer</GridHeading>
           <GridSmall>437 vacancy</GridSmall>
         </div>
         <div className="grid-item">
-          <Button colors="#A5C0DD">
+          <Button colors="#B6EAFA">
             <GridImage src={CodingIcon} />
           </Button>
           <GridHeading>Design</GridHeading>
           <GridSmall>437 vacancy</GridSmall>
         </div>
         <div className="grid-item">
-          <Button colors="orange">
+          <Button colors="#FF884B">
             <GridImage src={Design} />
           </Button>
           <GridHeading>Web Developer</GridHeading>
           <GridSmall>437 vacancy</GridSmall>
         </div>
         <div className="grid-item">
-          <Button colors="#917FB3">
+          <Button colors="#DF2E38">
             <GridImage src={Bullhorn} />
           </Button>
           <GridHeading>Project</GridHeading>
           <GridSmall>437 vacancy</GridSmall>
         </div>
         <div className="grid-item">
-          <Button colors="#FF6969">
+          <Button colors="#FF6E31">
             <GridImage src={CustomerSupportIcon} />
           </Button>
           <GridHeading>Mangement</GridHeading>
           <GridSmall>437 vacancy</GridSmall>
         </div>
         <div className="grid-item">
-          <Button colors="yellow">
+          <Button colors="#FED049">
             <GridImage src={UserIcon} />
           </Button>
           <GridHeading>Block chain</GridHeading>
           <GridSmall>437 vacancy</GridSmall>
         </div>
         <div className="grid-item">
-          <Button colors="Teal">
+          <Button colors="#86E5FF">
             <GridImage src={ProjectIcon} />
           </Button>
           <GridHeading>Development</GridHeading>
           <GridSmall>437 vacancy</GridSmall>
         </div>
         <div className="grid-item">
-          <Button colors="#B0A4A4">
+          <Button colors="#68B984">
             <GridImage src={ToolIcon} />
           </Button>
           <GridHeading>Database</GridHeading>
