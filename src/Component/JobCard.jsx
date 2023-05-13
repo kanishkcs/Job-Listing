@@ -11,14 +11,16 @@ const Wrapper = styled.div`
   border-radius: 5px;
   padding: 0 40px 0 40px;
   margin:23px;
-  
+  transition: 0.1s ease all;
   @media screen and (max-width: 768px) {
     width: 98%;
     padding-left: 10px;
     padding-right: 10px;
     margin-left: 3px;
   }
- 
+ &:hover{
+  transform: scale(1.03);
+ }
 `;
 const TopContainer = styled.div`
   display: flex;
