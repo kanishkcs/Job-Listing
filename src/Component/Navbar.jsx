@@ -21,6 +21,10 @@ const Wrapper = styled.div`
   @media screen and (max-width: 720px) {
     justify-content:space-between;
   }
+  @media screen and (max-width: 1400px) {
+    justify-content:space-between;
+    font-size: 12px;
+  }
 `;
 
 const LeftContainer = styled.div`
@@ -30,6 +34,12 @@ const LeftContainer = styled.div`
     font-size: 19px !important;
     margin-left: 10px;
   }
+  @media screen and (max-width: 1400px) {
+    justify-content:space-between;
+    font-size: 15px;
+    margin-left: 10px;
+  }
+
 `;
 
 const MiddleContainer = styled.div`
@@ -47,6 +57,9 @@ const RightContainer = styled.div`
     margin-right: 14px;
     gap: 10px;
   }
+  @media screen and (max-width: 1400px) {
+    gap: 8px;
+  }
 `;
 const Logo = styled.img`
   width: 32px;
@@ -57,12 +70,20 @@ const Logo = styled.img`
     width: 24px;
     height: 24px;
   }
+  @media screen and (max-width: 1400px) {
+    width: 24px;
+    height: 24px;
+  }
 `;
 
 const Heading = styled.span`
   margin: 0 0 0 15px;
   @media screen and (max-width: 720px){
     margin: 4px 0 0 5px;
+  }
+  @media screen and (max-width: 1400px) {
+    margin: 6px 0 0 5px;
+
   }
  
 `;

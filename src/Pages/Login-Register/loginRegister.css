@@ -126,3 +126,16 @@
       
       }
   }
+
+  @media screen and (max-width:1400px) {
+    .login-register-main{
+        top: 70px;
+        max-height: 440px;
+        max-width: 300px;
+    }
+    .login-register-register {
+        
+        transform: translateY(5%);
+      
+      }
+  }

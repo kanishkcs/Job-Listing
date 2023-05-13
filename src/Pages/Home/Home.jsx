@@ -66,7 +66,14 @@ const TopButton = styled.button`
   border-radius: 5px;
   font-size: 16px;
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
+  }
+  @media screen and (max-width: 1400px){
+    top: 3rem;
+    font-size: 0.7rem;
+    left: 6rem;
+    width: 10rem;
+    height: 2rem;
   }
 `;
 const TopDiv = styled.div`
@@ -75,6 +82,11 @@ const TopDiv = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  @media screen and (max-width: 1400px){
+    top: 5rem;
+    font-size: 0.7rem;
+  }
+  
 `;
 
 const Home = () => {
