@@ -53,24 +53,50 @@ const GetStartedLogo = styled.img`
   margin-right: 8px;
 `;
 
+const TopButton = styled.button`
+  width: 15rem;
+  height: 2.8rem;
+  position: absolute;
+  left: 8rem;
+  top: 5rem;
+  cursor: pointer;
+  border: none;
+  background-color: mediumseagreen;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  &:hover {
+    transform: scale(1.2);
+  }
+`;
+const TopDiv = styled.div`
+  position: relative;
+  top: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+`;
+
 const Home = () => {
   return (
     <>
       <div className="box">
         <div className="box1">
-        <div>
-          <span className="above_heading">
-            {" "}
-            #4923 jobs are avaiable right now
-          </span>
+          <div>
+            <span className="above_heading">
+              {" "}
+              #4923 jobs are avaiable right now
+            </span>
 
-          <h1 className=" box1Text"> Find the most exciting jobs.</h1>
-          <h4 className="last_heading">
-            Leverage agile frameworks to provide a robust synopsis for high
-            level overviews.iterative to
-          </h4>
-          <h4>Explore the Oppotunities</h4>
-          <button>Explore Now</button>
+            <h1 className=" box1Text"> Find the most exciting jobs.</h1>
+            <h4 className="last_heading">
+              Embrace Your Passion: Find Your Perfect Job Amongst Countless
+              Exciting Opportunities Available Now!
+            </h4>
+            <TopDiv>
+              <h2>Discover Exciting Opportunities Now!</h2>
+              <TopButton>Explore Now</TopButton>
+            </TopDiv>
           </div>
         </div>
         <div className="rotate-container main_right">
@@ -107,15 +133,15 @@ const Home = () => {
         </div>
       </div>
       <div className="container4">
-      <h1 >Explore by category</h1>
-        
+        <h1>Explore by category</h1>
+
         <h2 className="last_line">
           {" "}
           Leverage agile frameworks to provide a robust synopsis for high level
           overview to start.
         </h2>
       </div>
-      
+
       <div className=" grid_container5">
         <div className="grid-item">
           <Button colors="#5C469C">
@@ -179,14 +205,17 @@ const Home = () => {
           <h1> Most comprehensive job portal</h1>
 
           <p> we must explain to you how all this mistake idea of denouncing</p>
-          <div className="footer_button">
-            <button type="submit" className="register_btn">
-              RGISTER{" "}
-            </button>
-            <button type="register" className="login_btn">
-              LOG IN{" "}
-            </button>
-          </div>
+          <Link to="/login">
+            {" "}
+            <div className="footer_button">
+              <button type="submit" className="register_btn">
+                RGISTER{" "}
+              </button>
+              <button type="register" className="login_btn">
+                LOG IN{" "}
+              </button>
+            </div>
+          </Link>
         </div>
         E
         <div className="footer_container">

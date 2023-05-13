@@ -352,6 +352,25 @@ ul {
 
 .register_btn {
   background-color: #1db65d;
+  border-radius: 5px;
+  border:none;
+  cursor: pointer;
+  width: 7rem;
+  height: 3.5rem;
+}
+.login_btn{
+  border-radius: 5px;
+  border:none;
+  cursor: pointer;
+  width: 7rem;
+  height: 3.5rem;
+
+}
+.login_btn:hover{
+  transform: scale(1.1);
+}
+.register_btn:hover{
+  transform:scale(1.1)
 }
 
 /* .follow_us_div{

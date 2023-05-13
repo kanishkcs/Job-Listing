@@ -5,18 +5,18 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: #56CC91;
+    background-color: #39443F;
     max-height: 540px;
     max-width: 440px;
     overflow: hidden;
     border-radius: 12px;
-    box-shadow: 7px 7px 10px 3px #24004628;
+    box-shadow: 7px 7px 10px 3px #56496128;
   }
 
   .wrapper{
-    height: 90vh;
+    height: 95vh;
     
-    background-color:  #E5F9DB;
+    background-color:  #26282E;
     overflow: hidden !important;
   }
   
