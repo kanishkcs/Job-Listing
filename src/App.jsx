@@ -22,16 +22,16 @@ function App() {
 
       <Routes>
           {/* For Deployment */}
-        {/* <Route path='/' element={<Home />} />
+        <Route path='/' element={<Home />} />
         <Route path='/jobPage' element={<JobPage />} />
-        <Route path='/jobDetails' element={<JobDetails />} /> */}
-
-
-        {/* For testing  */}
-        <Route path='/jobPage' element={<Home />} />
-        <Route path='/' element={<JobPage />} />
         <Route path='/jobDetails' element={<JobDetails />} />
         <Route path='/login' element={<LoginRegister/>}/>
+
+        {/* For testing  */}
+        {/* <Route path='/jobPage' element={<Home />} />
+        <Route path='/' element={<JobPage />} />
+        <Route path='/jobDetails' element={<JobDetails />} /> */}
+        {/* <Route path='/login' element={<LoginRegister/>}/> */}
       </Routes>
     </>
   );
