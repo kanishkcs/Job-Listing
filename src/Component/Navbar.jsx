@@ -61,6 +61,7 @@ const HamBurger = styled.div`
   flex-direction: column;
   gap: 4px;
   height: auto;
+  outline: none;
   cursor: pointer;
   @media screen and (max-width: 720px) {
     visibility: visible;
