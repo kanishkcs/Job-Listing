@@ -60,6 +60,7 @@ const HamBurger = styled.div`
   visibility: hidden;
   flex-direction: column;
   gap: 4px;
+  height: auto;
   cursor: pointer;
   @media screen and (max-width: 720px) {
     visibility: visible;
@@ -67,7 +68,7 @@ const HamBurger = styled.div`
 `;
 const HamTop = styled.div`
   width: 40px;
-  
+  height: 6px;
   background-color: black;
   border-radius: 12px;
   transition: 0.5s ease all;
