@@ -67,7 +67,7 @@ const HamBurger = styled.div`
 `;
 const HamTop = styled.div`
   width: 40px;
-  height: 6px;
+  
   background-color: black;
   border-radius: 12px;
   transition: 0.5s ease all;
