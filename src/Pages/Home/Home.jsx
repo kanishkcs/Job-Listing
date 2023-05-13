@@ -69,6 +69,8 @@ const Home = () => {
             Leverage agile frameworks to provide a robust synopsis for high
             level overviews.iterative to
           </h4>
+          <h4>Explore the Oppotunities</h4>
+          <button>Explore Now</button>
           </div>
         </div>
         <div className="rotate-container main_right">

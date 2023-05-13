@@ -10,7 +10,7 @@ const LoginRegister = () => {
 
       <div className="login-register-login">
         <form className="login-register-form">
-          <label htmlFor="login-register-chk" aria-hidden="true">
+          <label htmlFor="login-register-chk" className="label" aria-hidden="true">
             Log in
           </label>
           <input
@@ -33,7 +33,7 @@ const LoginRegister = () => {
 
       <div className="login-register-register">
         <form className="login-register-form">
-          <label htmlFor="login-register-chk" aria-hidden="true">
+          <label htmlFor="login-register-chk"  className="label" aria-hidden="true">
             Register
           </label>
           <input
