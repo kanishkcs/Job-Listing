@@ -24,7 +24,9 @@ const Wrapper = styled.div`
 
 const LeftContainer = styled.div`
   display: flex;
-  
+  @media screen and (max-width: 720px) {
+    font-size: 19px !important;
+  }
 `;
 
 const MiddleContainer = styled.div`
@@ -46,13 +48,15 @@ const Logo = styled.img`
   height: 35px;
   margin-left: ${(props) => props.pd};
   cursor: pointer;
+  @media screen and (max-width: 720px) {
+    width: 20px;
+    height: 20px;
+  }
 `;
 
-const Heading = styled.h1`
+const Heading = styled.span`
   margin: 0 0 0 15px;
-  @media screen and(max-width:720px) {
-    font-size: 16px;
-  }
+ 
 `;
 
 const HamBurger = styled.div`
@@ -70,6 +74,7 @@ const HamBurger = styled.div`
 const HamTop = styled.div`
   width: 40px;
   height: 6px;
+  outline: none;
   background-color: black;
   border-radius: 12px;
   transition: 0.5s ease all;
@@ -82,6 +87,7 @@ const HamTop = styled.div`
 `;
 const HamCenter = styled.div`
   width: 40px;
+  outline: none;
   height: 6px;
   background-color: black;
   border-radius: 12px;
@@ -93,6 +99,7 @@ const HamCenter = styled.div`
 `;
 const HamBottom = styled.div`
   width: 40px;
+  outline: none;
   height: 6px;
   background-color: black;
   border-radius: 12px;
