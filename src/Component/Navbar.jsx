@@ -18,7 +18,7 @@ const Wrapper = styled.div`
   width: 100vw;
   z-index: 999;
   @media screen and (max-width: 720px) {
-    
+    justify-content:space-between;
   }
 `;
 
@@ -38,19 +38,21 @@ const MiddleContainer = styled.div`
 const RightContainer = styled.div`
   
   display: flex;
-  gap: 10px;
+  justify-content: space-between;
+  gap: 30px;
   @media screen and (max-width: 720px) {
-    
+    margin-right: 14px;
+    gap: 10px;
   }
 `;
 const Logo = styled.img`
-  width: 35px;
-  height: 35px;
+  width: 32px;
+  height: 32px;
   margin-left: ${(props) => props.pd};
   cursor: pointer;
   @media screen and (max-width: 720px) {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
   }
 `;
 
@@ -72,8 +74,8 @@ const HamBurger = styled.div`
   }
 `;
 const HamTop = styled.div`
-  width: 40px;
-  height: 6px;
+  width: 37px;
+  height: 5px;
   outline: none;
   background-color: black;
   border-radius: 12px;
@@ -86,9 +88,9 @@ const HamTop = styled.div`
   
 `;
 const HamCenter = styled.div`
-  width: 40px;
+  width: 37px;
   outline: none;
-  height: 6px;
+  height: 5px;
   background-color: black;
   border-radius: 12px;
   
@@ -98,9 +100,9 @@ const HamCenter = styled.div`
   }
 `;
 const HamBottom = styled.div`
-  width: 40px;
+  width: 37px;
   outline: none;
-  height: 6px;
+  height: 5px;
   background-color: black;
   border-radius: 12px;
   transform-origin: 0% 50%;
@@ -183,7 +185,7 @@ const Navbar = () => {
         </MiddleContainer>
         <RightContainer>
           <Logo src={BellIcon} />
-          <Logo src={Blimp} pd="20px" />
+          <Logo src={Blimp} />
           <HamBurger className="hamBurger" onClick={HandleHam}>
             <HamTop className="hamTop"></HamTop>
             <HamCenter className="hamCenter"></HamCenter>
