@@ -154,50 +154,50 @@ const Home = () => {
           <Button colors="#B6EAFA">
             <GridImage src={CodingIcon} />
           </Button>
-          <GridHeading>Design</GridHeading>
-          <GridSmall>437 vacancy</GridSmall>
+          <GridHeading>Backend Dev</GridHeading>
+          <GridSmall>407 vacancy</GridSmall>
         </div>
         <div className="grid-item">
           <Button colors="#FF884B">
             <GridImage src={Design} />
           </Button>
-          <GridHeading>Web Developer</GridHeading>
-          <GridSmall>437 vacancy</GridSmall>
+          <GridHeading>Front End Dev</GridHeading>
+          <GridSmall>337 vacancy</GridSmall>
         </div>
         <div className="grid-item">
           <Button colors="#DF2E38">
             <GridImage src={Bullhorn} />
           </Button>
-          <GridHeading>Project</GridHeading>
-          <GridSmall>437 vacancy</GridSmall>
+          <GridHeading>UI/Ux Designer</GridHeading>
+          <GridSmall>423 vacancy</GridSmall>
         </div>
         <div className="grid-item">
           <Button colors="#FF6E31">
             <GridImage src={CustomerSupportIcon} />
           </Button>
-          <GridHeading>Mangement</GridHeading>
-          <GridSmall>437 vacancy</GridSmall>
+          <GridHeading>DevOps</GridHeading>
+          <GridSmall>123 vacancy</GridSmall>
         </div>
         <div className="grid-item">
           <Button colors="#FED049">
             <GridImage src={UserIcon} />
           </Button>
           <GridHeading>Block chain</GridHeading>
-          <GridSmall>437 vacancy</GridSmall>
+          <GridSmall>178 vacancy</GridSmall>
         </div>
         <div className="grid-item">
           <Button colors="#86E5FF">
             <GridImage src={ProjectIcon} />
           </Button>
           <GridHeading>Development</GridHeading>
-          <GridSmall>437 vacancy</GridSmall>
+          <GridSmall>500 vacancy</GridSmall>
         </div>
         <div className="grid-item">
           <Button colors="#68B984">
             <GridImage src={ToolIcon} />
           </Button>
-          <GridHeading>Database</GridHeading>
-          <GridSmall>437 vacancy</GridSmall>
+          <GridHeading>Database Engineer</GridHeading>
+          <GridSmall>250 vacancy</GridSmall>
         </div>
       </div>
       <div className="footer">

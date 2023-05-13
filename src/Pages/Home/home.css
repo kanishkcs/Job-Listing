@@ -258,6 +258,7 @@
 }
 
 .grid-item {
+  transition: 0.2s ease-in all;
   border: 1px solid lightgray;
   margin: 4rem 1rem 0 2rem;
   text-align: center;
@@ -271,7 +272,9 @@
 
   /* float: left; */
 }
-
+.grid-item:hover{
+  transform: scale(1.1);
+}
 .container6 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
