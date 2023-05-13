@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   position: sticky;
   padding-top: 20px;
   top: 0;
-  background-color: white;
+  background-color: honeydew;
   width: 100vw;
   z-index: 999;
   @media screen and (max-width: 720px) {
@@ -24,8 +24,10 @@ const Wrapper = styled.div`
 
 const LeftContainer = styled.div`
   display: flex;
+  font-size:22px;
   @media screen and (max-width: 720px) {
     font-size: 19px !important;
+    margin-left: 10px;
   }
 `;
 
@@ -58,10 +60,17 @@ const Logo = styled.img`
 
 const Heading = styled.span`
   margin: 0 0 0 15px;
+  @media screen and (max-width: 720px){
+    margin: 4px 0 0 5px;
+  }
  
 `;
 
 const HamBurger = styled.div`
+ -webkit-tap-highlight-color: transparent;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
   display: flex;
   visibility: hidden;
   flex-direction: column;
@@ -71,10 +80,12 @@ const HamBurger = styled.div`
   cursor: pointer;
   @media screen and (max-width: 720px) {
     visibility: visible;
+    height: auto;
+    outline: none !important;
   }
 `;
 const HamTop = styled.div`
-  width: 37px;
+  width: 35px;
   height: 5px;
   outline: none;
   background-color: black;
@@ -88,7 +99,7 @@ const HamTop = styled.div`
   
 `;
 const HamCenter = styled.div`
-  width: 37px;
+  width: 35px;
   outline: none;
   height: 5px;
   background-color: black;
@@ -100,7 +111,7 @@ const HamCenter = styled.div`
   }
 `;
 const HamBottom = styled.div`
-  width: 37px;
+  width: 35px;
   outline: none;
   height: 5px;
   background-color: black;

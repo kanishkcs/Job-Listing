@@ -8,6 +8,10 @@ overflow-x: hidden;
 height: 100vh;
 
 }
+html {
+    scroll-behavior: smooth;
+  }
+  
 
 .onOverflow{
     overflow: hidden;

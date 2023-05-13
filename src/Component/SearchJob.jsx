@@ -7,14 +7,14 @@ import SearchIcon from "../assets/search.png";
 import LocationIcon from "../assets/location.png";
 
 const Wrapper = styled.div`
-  height: auto;
+  height: 100vh;
   width: 100vw;
   padding-left: 3vw;
   margin-top: 40px;
   display: flex;
   margin-top: 6rem;
   position: absolute;
-
+  overflow: hidden !important;
   @media screen and (max-width: 768px) {
     padding: 4px;
 

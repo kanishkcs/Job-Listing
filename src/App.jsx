@@ -21,12 +21,16 @@ function App() {
       <Navbar />
 
       <Routes>
-
-        <Route path='/' element={<Home />} />
+          {/* For Deployment */}
+        {/* <Route path='/' element={<Home />} />
         <Route path='/jobPage' element={<JobPage />} />
+        <Route path='/jobDetails' element={<JobDetails />} /> */}
+
+
+        {/* For testing  */}
+        <Route path='/jobPage' element={<Home />} />
+        <Route path='/' element={<JobPage />} />
         <Route path='/jobDetails' element={<JobDetails />} />
-
-
 
       </Routes>
     </>
