@@ -10,32 +10,36 @@ import Blimp from "../assets/profile.png";
 const Wrapper = styled.div`
   display: flex;
   justify-content: space-around;
-  padding: 30px 0px;
-  position: fixed;
+  height: 4rem;
+  position: sticky;
+  padding-top: 20px;
+  top: 0;
   background-color: white;
   width: 100vw;
   z-index: 999;
-  @media screen and  (max-width:720px){
-    justify-content: space-between;
+  @media screen and (max-width: 720px) {
+    
   }
 `;
 
 const LeftContainer = styled.div`
   display: flex;
+  
 `;
 
 const MiddleContainer = styled.div`
   display: flex;
-  @media screen and  (max-width:720px){
+  @media screen and (max-width: 720px) {
     display: none;
   }
 `;
 const RightContainer = styled.div`
+  
   display: flex;
-  
-  justify-content: space-between;
-  width: 3em;
-  
+  gap: 10px;
+  @media screen and (max-width: 720px) {
+    
+  }
 `;
 const Logo = styled.img`
   width: 35px;
@@ -46,55 +50,57 @@ const Logo = styled.img`
 
 const Heading = styled.h1`
   margin: 0 0 0 15px;
+  @media screen and(max-width:720px) {
+    font-size: 16px;
+  }
 `;
-
 
 const HamBurger = styled.div`
   display: flex;
   visibility: hidden;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 4px;
   cursor: pointer;
-  @media screen and  (max-width:720px){
+  @media screen and (max-width: 720px) {
     visibility: visible;
   }
-  
-  `;
-  const HamTop = styled.div`
-    width: 45px;
-    height: 8px;
-    background-color: black;
-    border-radius: 12px;
-    transition: 0.7s ease all;
-    &.active{
-      transform: rotate(42deg);
-      transform-origin:0 55% ;
-    }
-
-  `;
-  const HamCenter = styled.div`
-    width: 45px;
-    height: 8px;
-    background-color: black;
-    border-radius: 12px;
-    transition: 1s ease all;
-
-    &.active{
-      display:none;
-    }
+`;
+const HamTop = styled.div`
+  width: 40px;
+  height: 6px;
+  background-color: black;
+  border-radius: 12px;
+  transition: 0.5s ease all;
+  transform-origin: 0% 50%;
+  &.active {
+    transform: rotate(32deg);
     
-  `;
-  const HamBottom = styled.div`
-    width: 45px;
-    height: 8px;
-    background-color: black;
-    border-radius: 12px;
-    &.active{
-      transform: rotate(-43deg);
-      transform-origin:0 50%;
-    }
-    transition: 0.7s ease all;
-  `;
+  }
+  
+`;
+const HamCenter = styled.div`
+  width: 40px;
+  height: 6px;
+  background-color: black;
+  border-radius: 12px;
+  
+
+  &.active {
+    visibility: hidden;
+  }
+`;
+const HamBottom = styled.div`
+  width: 40px;
+  height: 6px;
+  background-color: black;
+  border-radius: 12px;
+  transform-origin: 0% 50%;
+  &.active {
+    transform: rotate(-32deg);
+    
+  }
+  transition: 0.5s ease all;
+`;
 
 const Navbar = () => {
   let url = useLocation();
@@ -105,26 +111,23 @@ const Navbar = () => {
     document.body.classList.remove("onOverflow");
   };
 
-  const HandleHam = ()=>{
+  const HandleHam = () => {
     let Hamtop = document.querySelector(".hamTop");
     let Hamcenter = document.querySelector(".hamCenter");
     let Hambottom = document.querySelector(".hamBottom");
 
-    if(Hamtop.classList.contains("active")){
+    if (Hamtop.classList.contains("active")) {
       Hamtop.classList.remove("active");
       Hamcenter.classList.remove("active");
       Hambottom.classList.remove("active");
-    }
-    else{
+    } else {
       Hamtop.classList.add("active");
       Hamcenter.classList.add("active");
-      Hambottom.classList.add("active")
+      Hambottom.classList.add("active");
     }
-
-  }
+  };
 
   return (
-   
     <>
       <Wrapper>
         <LeftContainer>
