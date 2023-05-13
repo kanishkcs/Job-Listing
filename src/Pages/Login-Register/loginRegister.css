@@ -54,6 +54,9 @@
     font-weight: bold;
     cursor: pointer;
     transition: .5s ease-in-out;
+    -webkit-tap-highlight-color: transparent;
+  -moz-appearance: none;
+  -webkit-appearance: none;
   }
   
   .login-register-input {
