@@ -7,7 +7,7 @@ import SearchIcon from "../assets/search.png";
 import LocationIcon from "../assets/location.png";
 
 const Wrapper = styled.div`
-  height: 100vh;
+  
   width: 100vw;
   padding-left: 3vw;
   margin-top: 40px;

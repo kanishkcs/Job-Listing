@@ -1,13 +1,13 @@
 import React from "react";
 
-import Jobpage_banner from "./jobpage_banner.png";
+import Jobpage_banner from "../../assets/jobpage_banner.png";
 import SearchJob from "../../Component/SearchJob";
 import styled from "styled-components";
 
 const Wrapper =styled.div`
 height: 100vh;
 position: fixed;
-z-index:998;
+
 overflow: hidden !important;
 `
 const Banner = styled.div`
@@ -22,7 +22,7 @@ const Banner = styled.div`
     overflow: hidden !important;
     width: 100vw;
     @media screen and (max-width: 720px){
-      height: 80px;
+      height: 60px;
     }
 `
 const BannerHeading = styled.h1`
@@ -37,6 +37,11 @@ const BannerHeading = styled.h1`
 
 const BannerImg = styled.img`
 
+@media screen and (max-width:720px){
+  width: 140px;
+  height: 60px;
+}
+
 `
 
 export const JobPage = () => {
@@ -46,7 +51,7 @@ export const JobPage = () => {
       <Wrapper>
       <Banner>
         <BannerHeading>Your Dream Job </BannerHeading>
-        <BannerImg src="./jobpage_banner.png"/>
+        <BannerImg src={Jobpage_banner}/>
       </Banner>
       <SearchJob /> 
       </Wrapper>

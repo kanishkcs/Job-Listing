@@ -8,7 +8,7 @@ import { JobPage } from "./Pages/JobPage/JobPage";
 import Navbar from "./Component/Navbar";
 import { Route, Routes } from "react-router-dom";
 import PostJob from "./Pages/Post Job/PostJob";
-
+import LoginRegister from "./Pages/Login-Register/LoginRegister"
 
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
         <Route path='/jobPage' element={<Home />} />
         <Route path='/' element={<JobPage />} />
         <Route path='/jobDetails' element={<JobDetails />} />
-
+        <Route path='/login' element={<LoginRegister/>}/>
       </Routes>
     </>
   );

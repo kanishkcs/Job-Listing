@@ -17,6 +17,7 @@ const Wrapper = styled.div`
   background-color: honeydew;
   width: 100vw;
   z-index: 999;
+  overflow: hidden !important;
   @media screen and (max-width: 720px) {
     justify-content:space-between;
   }
@@ -196,7 +197,7 @@ const Navbar = () => {
         </MiddleContainer>
         <RightContainer>
           <Logo src={BellIcon} />
-          <Logo src={Blimp} />
+          <Link to="/login"><Logo src={Blimp} /></Link>
           <HamBurger className="hamBurger" onClick={HandleHam}>
             <HamTop className="hamTop"></HamTop>
             <HamCenter className="hamCenter"></HamCenter>
