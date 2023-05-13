@@ -50,7 +50,7 @@ const LoginRegister = () => {
             name="password"
             placeholder="Password"
           />
-          <button>Rgister</button>
+          <button>Register</button>
         </form>
       </div>
     </div>
