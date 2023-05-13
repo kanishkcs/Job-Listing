@@ -258,6 +258,9 @@
 }
 
 .grid-item {
+  -webkit-tap-highlight-color: transparent;
+  -moz-appearance: none;
+  -webkit-appearance: none;
   transition: 0.2s ease-in all;
   border: 1px solid lightgray;
   margin: 4rem 1rem 0 2rem;
