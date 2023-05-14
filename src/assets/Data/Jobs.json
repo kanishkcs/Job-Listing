@@ -1,0 +1,236 @@
+[
+    {
+      "title": "Software Engineer",
+      
+      "tags": ["Software Engineering", "Programming", "Computer Science"],
+      "location": "Anywhere",
+      "description": [
+        "Design, develop, and test software applications",
+        "Work with a team of engineers to build and maintain software systems",
+        "Use a variety of programming languages and technologies"
+      ],
+      "salary": "60k - 120k INR"
+    },
+    {
+      "title": "Web Developer",
+      "tags": ["Web Development", "HTML", "CSS", "JavaScript"],
+      "location": "Anywhere",
+      "description": [
+        "Design and develop web pages and applications",
+        "Work with a team of designers and engineers to create user-friendly and engaging websites",
+        "Use a variety of web development technologies"
+      ],
+      "salary": "50k - 100k INR"
+    },
+    {
+      "title": "Database Administrator",
+      "tags": ["Database Administration", "SQL", "Data Warehousing"],
+      "location": "Anywhere",
+      "description": [
+        "Design, implement, and maintain databases",
+        "Work with a team of engineers to ensure the security and performance of databases",
+        "Use a variety of database management systems"
+      ],
+      "salary": "60k - 120k INR"
+    },
+    {
+      "title": "Systems Analyst",
+      "tags": ["Systems Analysis", "Business Analysis", "Requirements Gathering"],
+      "location": "Anywhere",
+      "description": [
+        "Gather and analyze business requirements",
+        "Design and implement systems solutions",
+        "Work with a team of engineers to develop and maintain systems"
+      ],
+      "salary": "60k - 120k INR"
+    },
+    {
+      "title": "Network Engineer",
+      "tags": ["Network Engineering", "Networking", "TCP/IP"],
+      "location": "Anywhere",
+      "description": [
+        "Design, implement, and maintain computer networks",
+        "Work with a team of engineers to ensure the security and performance of networks",
+        "Use a variety of networking technologies"
+      ],
+      "salary": "70k - 130k INR"
+    },
+    {
+      "title": "Security Engineer",
+      "tags": ["Security Engineering", "Information Security", "Cybersecurity"],
+      "location": "Anywhere",
+      "description": [
+        "Design, implement, and maintain security systems",
+        "Work with a team of engineers to protect systems from cyberattacks",
+        "Use a variety of security technologies"
+      ],
+      "salary": "80k - 140k INR"
+    },
+    {
+      "title": "Business Analyst",
+      "tags": ["Business Analysis", "Requirements Gathering", "Project Management"],
+      "location": "Anywhere",
+      "description": [
+        "Gather and analyze business requirements",
+        "Develop and maintain business process models",
+        "Work with a team of engineers to develop and maintain systems"
+      ],
+      "salary": "60k - 120k INR"
+    },
+    {
+      "title": "Project Manager",
+      "tags": ["Project Management", "Scheduling", "Budgeting"],
+      "location": "Anywhere",
+      "description": [
+        "Plan, manage, and execute projects",
+        "Work with a team of engineers to deliver projects on time and within budget",
+        "Use a variety of project management tools and techniques"
+      ],
+      "salary": "70k - 130k INR"
+    },
+    {
+      "title": "Product Manager",
+      "tags": ["Product Management", "Requirements Gathering", "User Experience"],
+      "location": "Anywhere",
+      "description": [
+        "Define, develop, and launch products",
+        "Work with a team of engineers to create user-friendly and engaging products",
+        "Use a variety of product management tools and techniques"
+      ],
+      "salary": "80k - 140k INR"
+    },
+    {
+      "title": "UX Designer",
+      "tags": ["User Experience Design", "UI Design", "Prototyping"],
+      "location": "Anywhere",
+      "description": [
+        "Design and develop user interfaces for web and"]
+        
+    },
+    
+        {
+          "title": "Data Scientist",
+          "tags": ["Python", "Machine Learning", "Data Analysis"],
+          "location": "New York, USA",
+          "description": [
+            "Develop and maintain machine learning models for data analysis",
+            "Collaborate with data engineers and other stakeholders",
+            "Experience with statistical analysis and data visualization"
+          ],
+          "salary": "100k - 120k INR"
+        },
+        {
+          "title": "Mobile App Developer",
+          "tags": ["React Native", "iOS", "Android"],
+          "location": "Tokyo, Japan",
+          "description": [
+            "Develop and maintain mobile applications for iOS and Android platforms",
+            "Collaborate with designers and other stakeholders",
+            "Experience with native app development and mobile app design patterns"
+          ],
+          "salary": "70k - 90k INR"
+        },
+        {
+          "title": "Product Manager",
+          "tags": ["Agile", "Scrum", "Product Strategy"],
+          "location": "Sydney, Australia",
+          "description": [
+            "Lead product development from ideation to launch",
+            "Collaborate with cross-functional teams and stakeholders",
+            "Experience with Agile methodologies and product strategy"
+          ],
+          "salary": "110k - 130k INR"
+        },
+      
+      
+        {
+          "title": "Full Stack Developer",
+          "tags": ["Node.js", "React Js", "Express Js"],
+          "location": "London, UK",
+          "description": [
+            "Handle Backend and Front End Both",
+            "Restful API",
+            "Knowledge of SQL and NoSQL Database"
+          ],
+          "salary": "50k - 70k INR"
+        },
+        {
+          "title": "Front End Developer",
+          "tags": ["React Js", "JavaScript", "HTML", "CSS"],
+          "location": "San Francisco, USA",
+          "description": [
+            "Create web pages using HTML, CSS, and JavaScript",
+            "Work with designers to implement responsive designs",
+            "Optimize web pages for performance and SEO"
+          ],
+          "salary": "80k - 100k INR"
+        },
+        {
+          "title": "Back End Developer",
+          "tags": ["Python", "Django", "RESTful APIs"],
+          "location": "Toronto, Canada",
+          "description": [
+            "Develop and maintain backend systems for web applications",
+            "Collaborate with front-end developers and other stakeholders",
+            "Experience with relational and non-relational databases"
+          ],
+          "salary": "75k - 95k INR"
+        },
+        {
+          "title": "UI/UX Designer",
+          "tags": ["Sketch", "Adobe XD", "Figma"],
+          "location": "Paris, France",
+          "description": [
+            "Design and develop user interfaces for web and mobile applications",
+            "Collaborate with developers and other stakeholders",
+            "Experience with wireframing, prototyping, and user research"
+          ],
+          "salary": "60k - 80k INR"
+        },
+        {
+          "title": "DevOps Engineer",
+          "tags": ["AWS", "Docker", "Kubernetes"],
+          "location": "Berlin, Germany",
+          "description": [
+            "Manage and maintain infrastructure for web applications",
+            "Experience with cloud infrastructure and containerization",
+            "Experience with CI/CD pipelines and automation tools"
+          ],
+          "salary": "90k - 110k INR"
+        },
+        {
+          "title": "Mobile App Developer",
+          "tags": ["React Native", "iOS", "Android"],
+          "location": "New York, USA",
+          "description": [
+            "Develop and maintain mobile apps using React Native",
+            "Collaborate with designers and other stakeholders",
+            "Experience with native iOS and Android development"
+          ],
+          "salary": "70k - 90k INR"
+        },
+        {
+          "title": "Data Analyst",
+          "tags": ["SQL", "Python", "Excel"],
+          "location": "Sydney, Australia",
+          "description": [
+            "Analyze and interpret data to identify trends and insights",
+            "Develop and maintain reports and dashboards",
+            "Experience with SQL, Python, and data visualization tools"
+          ],
+          "salary": "60k - 80k INR"
+        },
+        {
+          "title": "Cloud Engineer",
+          "tags": ["AWS", "Azure", "Google Cloud"],
+          "location": "Seattle, USA",
+          "description": [
+            "Manage and maintain cloud infrastructure",
+            "Experience with cloud migration and optimization",
+            "Experience with automation and scripting"
+          ],
+          "salary": "80k - 100k INR"
+        }
+    
+] 
+  

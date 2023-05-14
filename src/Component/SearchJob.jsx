@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import JobCard from "./JobCard";
-
+import Jobs from "../assets/Data/Jobs.json"
 // Images and Icons
 import SearchIcon from "../assets/search.png";
 import LocationIcon from "../assets/location.png";
@@ -255,7 +255,7 @@ const InputDiv = styled.div`
 const SearchJob = () => {
   const jobCards = [];
   for (let i = 0; i < 60; i++) {
-    jobCards.push(<JobCard key={i} />);
+    jobCards.push(<JobCard key={i}/>);
   }
   const [rangeValue, setValue] = useState(100);
   const [range2Value, set2Value] = useState(150);
@@ -343,7 +343,9 @@ const SearchJob = () => {
             <SerachButton>Search</SerachButton>
           </SearchDiv>
           <NumberOfJobs>250 Jobs results</NumberOfJobs>
-          <JobListDiv>{jobCards}</JobListDiv>
+          <JobListDiv>{Jobs.map(Job => (
+      <JobCard key={Job.title} Job={Job} />
+    ))}</JobListDiv>
         </RightContainer>
       </Wrapper>
     </>

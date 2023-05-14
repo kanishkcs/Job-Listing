@@ -107,41 +107,45 @@ const Locationicon = styled.img`
     width: 25px;
   }
 `;
+const Company = styled.span`
+`
 
-const JobCard = () => {
+const JobCard = ({Job}) => {
   return (
     <>
       <Wrapper>
         <TopContainer>
           <HEadingDiv>
-            <Heading>Full Stack Developer</Heading>
+            <Heading>{Job.title} at Apple</Heading>
+            
             <div>
               <Tags bgColor="#fff2e6" fontColor="#e2b066">
-                Node.js{" "}
+                {Job.tags[0]}{" "}
               </Tags>
               <Tags bgColor="#fdedf0" fontColor="#c57283">
-                React Js{" "}
+              {Job.tags[1]}{" "}
               </Tags>
               <Tags bgColor="#fdedf0" fontColor="#c57283">
-                Express Js
+              {Job.tags[2]}
               </Tags>
             </div>
           </HEadingDiv>
 
           <Location>
             <Locationicon src={LocationIcon} />
-            <Heading>london UK</Heading>
+            <Heading>{Job.location}</Heading>
           </Location>
         </TopContainer>
         <DiscriptionDiv>
           <div>
-            <DiscriptionList>Handle Backend and Front End Both</DiscriptionList>
-            <DiscriptionList>Restful API </DiscriptionList>
-            <DiscriptionList>
-              Knowledge of SQL and NoSQL Database
-            </DiscriptionList>
+          {/* {job.description.map(desc => (
+          <DiscriptionList key={desc}>{desc}</DiscriptionList>
+        ))} */}
+        {Job.description.map((item)=>{
+          return <DiscriptionList>{item}</DiscriptionList>
+        })}
           </div>
-          <Heading>50k - 70k INR</Heading>
+          <Heading>{Job.salary}</Heading>
         </DiscriptionDiv>
       </Wrapper>
     </>
