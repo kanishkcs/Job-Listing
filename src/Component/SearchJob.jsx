@@ -15,8 +15,7 @@ const Wrapper = styled.div`
   position: absolute;
   overflow: hidden !important;
   @media screen and (max-width: 768px) {
-    padding: 4px;
-
+    padding: 4px; 
     margin-top: 10px;
   }
   @media screen and (max-width: 1450px) {
@@ -227,14 +226,21 @@ const ApplyFilter = styled.button`
   position: relative;
   left: 7em;
   top: 2em;
+  cursor: pointer;
+  transition: 0.2s ease-in all;
   @media screen and (max-width: 1450px) {
     font-size: 14px;
     top: 0;
     left: 7;
     margin: auto;
   }
+  &:hover{
+    transform: scale(1.1);
+  }
 `;
 const JobHeadings = styled.span`
+  font-size: 1.2rem;
+  margin: 10px;
   @media screen and (max-width: 1450px) {
     font-size: 15px;
   }
@@ -255,7 +261,7 @@ const SearchJob = () => {
   const [range2Value, set2Value] = useState(150);
   const check = (event) => {
     setValue(event.target.value);
-    set2Value(rangeValue);
+    set2Value(parseInt(event.target.value)+50);
   };
 
   return (
@@ -318,6 +324,7 @@ const SearchJob = () => {
               max={200}
               type="range"
               id="range"
+              
             />
           </Salary>
           <hr />
