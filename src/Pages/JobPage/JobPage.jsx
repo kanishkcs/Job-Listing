@@ -24,6 +24,9 @@ const Banner = styled.div`
     @media screen and (max-width: 720px){
       height: 60px;
     }
+    @media screen and (max-width: 1450px ){
+      height: 65px;
+    }
 `
 const BannerHeading = styled.h1`
 

@@ -18,6 +18,10 @@ const Wrapper = styled.div`
     padding-right: 10px;
     margin-left: 3px;
   }
+  @media screen and (max-width: 1450px) {
+   height: 120px;
+   margin-top: 5px;
+  }
  &:hover{
   transform: scale(1.03);
  }
@@ -34,6 +38,9 @@ const Heading = styled.h1`
   font-size: 1rem;
   @media screen and (max-width: 768px) {
     font-size: 0.8rem;
+  }
+  @media screen and (max-width: 1450px) {
+   font-size: 0.8rem;
   }
 `;
 const Tags = styled.button`
@@ -52,6 +59,10 @@ const Tags = styled.button`
     width: 4rem;
     margin: 0 5px 0 0;
   }
+  @media screen and (max-width: 1450px) {
+    margin: 0 3px 0 0;
+    padding: 3px;
+  }
 `;
 
 const Location = styled.div`
@@ -63,7 +74,10 @@ const DiscriptionDiv = styled.div`
   padding: 20px 0px 0px 30px;
   display: flex;
   justify-content: space-between;
-
+  @media screen and (max-width: 1450px) {
+ 
+    padding: 3px;
+  }
  
 `;
 
@@ -71,6 +85,9 @@ const DiscriptionList = styled.li`
 
 @media screen and (max-width: 768px) {
     font-size: 0.7rem;
+  }
+  @media screen and (max-width: 1450px) {
+    font-size: 0.8rem;
   }
 
 `;

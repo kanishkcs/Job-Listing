@@ -7,12 +7,11 @@ import SearchIcon from "../assets/search.png";
 import LocationIcon from "../assets/location.png";
 
 const Wrapper = styled.div`
-  
   width: 100vw;
   padding-left: 3vw;
-  margin-top: 40px;
+
   display: flex;
-  margin-top: 6rem;
+  margin-top: 3rem;
   position: absolute;
   overflow: hidden !important;
   @media screen and (max-width: 768px) {
@@ -20,22 +19,31 @@ const Wrapper = styled.div`
 
     margin-top: 10px;
   }
+  @media screen and (max-width: 1450px) {
+    margin-top: 10px;
+  }
 `;
 
 const LeftContainer = styled.div`
   border: 1px solid lightgray;
   border-radius: 15px;
-  height: 68vh;
+  height: auto;
   flex-basis: 19%;
   margin-right: 15px;
   @media screen and (max-width: 768px) {
     display: none;
+  }
+  @media screen and (max-width: 1450px) {
+    font-size: 14px;
+    height: 78vh;
   }
 `;
 
 const TopHeading = styled.div`
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
 `;
 
 const RightContainer = styled.div`
@@ -76,10 +84,17 @@ const Input = styled.input`
     props.$left ? "10px 0 0 10px" : "0 10px 10px 0 "};
   border: 1px solid lightgray;
   font-size: 1rem;
-
+  &:focus {
+    border: 1px solid #009c4c;
+    outline: none;
+  }
   @media screen and (max-width: 768px) {
     font-size: 0.8rem;
     height: 45px;
+  }
+  @media screen and (max-width: 1450px) {
+    height: 50px;
+    font-size: 0.8rem;
   }
 `;
 
@@ -105,6 +120,8 @@ const SerachButton = styled.button`
     right: 35%;
     width: 120px;
     height: 35px;
+  }
+  @media screen and (max-width: 1450px) {
   }
 `;
 
@@ -138,12 +155,15 @@ const LocationIcons = styled.img`
 
 const FilterSpan = styled.span`
   color: red;
-  margin-top: 1.3em;
+
   cursor: pointer;
 
   &:hover {
     transform: scale(1.1);
     color: #0b9e44;
+  }
+  @media screen and (max-width: 1450px) {
+    font-size: 14px;
   }
 `;
 
@@ -160,13 +180,24 @@ const Select = styled.select`
   border-radius: 7px;
   font-size: 1rem;
   padding: 10px;
+  @media screen and (max-width: 1450px) {
+    font-size: 12px;
+    margin-top: 10px;
+  }
 `;
-const Label = styled.label`
+const Label = styled.span`
   margin-bottom: 15px;
+  @media screen and (max-width: 1450px) {
+    font-size: 10px;
+  }
 `;
 const Option = styled.option`
   font-size: 1.3rem;
   padding: 10px;
+  border-radius: 5px;
+  @media screen and (max-width: 1450px) {
+    font-size: 14px;
+  }
 `;
 
 const JobType = styled.div`
@@ -196,6 +227,17 @@ const ApplyFilter = styled.button`
   position: relative;
   left: 7em;
   top: 2em;
+  @media screen and (max-width: 1450px) {
+    font-size: 14px;
+    top: 0;
+    left: 7;
+    margin: auto;
+  }
+`;
+const JobHeadings = styled.span`
+  @media screen and (max-width: 1450px) {
+    font-size: 15px;
+  }
 `;
 
 const JobTypeInput = styled.input``;
@@ -210,7 +252,7 @@ const SearchJob = () => {
     jobCards.push(<JobCard key={i} />);
   }
   const [rangeValue, setValue] = useState(100);
-  const [range2Value , set2Value] = useState(150);
+  const [range2Value, set2Value] = useState(150);
   const check = (event) => {
     setValue(event.target.value);
     set2Value(rangeValue);
@@ -221,12 +263,12 @@ const SearchJob = () => {
       <Wrapper>
         <LeftContainer>
           <TopHeading>
-            <h3>Filter</h3>
+            <JobHeadings>Filter</JobHeadings>
             <FilterSpan>Clear All</FilterSpan>
           </TopHeading>
           <hr></hr>
           <DatePost>
-            <h3>Date Posted</h3>
+            <JobHeadings>Date Posted</JobHeadings>
             <Select>
               <Option selected>Latest</Option>
               <Option selected>This Week</Option>
@@ -237,7 +279,7 @@ const SearchJob = () => {
           <hr></hr>
 
           <JobType>
-            <h3>Job Type</h3>
+            <JobHeadings>Job Type</JobHeadings>
             <InputDiv>
               <CheckBoxContainer>
                 <div>
@@ -266,10 +308,10 @@ const SearchJob = () => {
           </JobType>
           <hr />
           <Salary>
-            <h3>Salary Range</h3>
-            <h2>
+            <JobHeadings>Salary Range</JobHeadings>
+            <h3>
               {rangeValue}k ---{range2Value}k
-            </h2>
+            </h3>
             <JobTypeInput
               onInput={check}
               min={50}
