@@ -33,6 +33,7 @@ function App() {
         <Route path='/jobDetails' element={<JobDetails />} /> */}
         {/* <Route path='/login' element={<LoginRegister/>}/> */}
       </Routes>
+      
     </>
   );
 }

@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     background-color: #39443F;
-    max-height: 540px;
+    max-height: 570px;
     max-width: 440px;
     overflow: hidden;
     border-radius: 12px;
@@ -61,7 +61,7 @@
   
   .login-register-input {
     width: 100%;
-    height: 40px;
+    height: 50px;
     background: #e0dede;
     padding: 10px;
     border: none;

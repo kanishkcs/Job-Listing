@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     port: 3000, // Change this to the desired port number
     open: true, // Set this to true to automatically open the browser
-    host: '192.168.1.8', // Set this to your local IP address to access the dev server from other devices on your network
+    
   },
 });
 
