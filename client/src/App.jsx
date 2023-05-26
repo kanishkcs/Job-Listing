@@ -3,12 +3,13 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./app.css";
 import Home from "./Pages/Home/Home";
-import JobDetails from "./Pages/JobDetails/JobDetails";
+// import JobDetails from "./Pages/JobDetails/JobDetails";
 import { JobPage } from "./Pages/JobPage/JobPage";
 import Navbar from "./Component/Navbar";
 import { Route, Routes } from "react-router-dom";
 import PostJob from "./Pages/Post Job/PostJob";
 import LoginRegister from "./Pages/Login-Register/LoginRegister"
+import JobInfo from "./Pages/JobDetails/JobInfo";
 
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
           {/* For Deployment */}
         <Route path='/' element={<Home />} />
         <Route path='/jobPage' element={<JobPage />} />
-        <Route path='/jobDetails' element={<JobDetails />} />
+        <Route path='/jobDetails' element={<JobInfo />} />
         <Route path='/login' element={<LoginRegister/>}/>
 
         {/* For testing  */}
