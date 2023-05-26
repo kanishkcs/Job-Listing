@@ -23,6 +23,7 @@ const LoginRegister = () => {
   };
 
   const onChangeRegister = (event) => {
+    console.log(setregisterData)
     const { name, value, type, checked } = event.target;
     setregisterData({
       ...registerData,
@@ -32,7 +33,7 @@ const LoginRegister = () => {
 
   const handleRegister = (event) => {
     event.preventDefault();
-   
+   console.log(registerData)
     axios.post("http://localhost:3200/api/v1/register",registerData)
     .then(function (response){
     
@@ -46,17 +47,19 @@ const LoginRegister = () => {
         navigate('/');
       },2000);
       
-      
+      console.log('success')
     }
     else if(response.status==202){
       toast.error("Email Already Exists",{
         position:"bottom-right",
       })
+      console.log('mid')
     }
     else if(response.status===201){
       toast.error("Password Must be 8 char Long",{
         position:"bottom-right",
       })
+      console.log('last')
     }
     
 

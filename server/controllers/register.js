@@ -9,7 +9,7 @@ exports.register = async(req,res)=>{
     
     const emailExists = await registerSchema.findOne({email:email})
     if(password.length<8){
-        res.status(201).send("password length short")
+        res.status(422).send("password length short")
     }
     else if(emailExists){
         res.status(202).json({
