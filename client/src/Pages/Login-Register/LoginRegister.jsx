@@ -70,7 +70,7 @@ const LoginRegister = () => {
 
   const handleLogin = (event)=>{
     event.preventDefault();
-    axios.post("http://localhost:3200/login",loginData).then(function (response){
+    axios.post("http://localhost:3200/api/v1/login",loginData).then(function (response){
       
     if(response.status===200){
       toast.success("Logged In",{
