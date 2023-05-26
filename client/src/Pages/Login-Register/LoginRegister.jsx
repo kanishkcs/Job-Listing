@@ -70,7 +70,7 @@ const LoginRegister = () => {
 
   const handleLogin = (event)=>{
     event.preventDefault();
-    axios.post("http://localhost:3100/login",loginData).then(function (response){
+    axios.post("http://localhost:3200/login",loginData).then(function (response){
       
     if(response.status===200){
       toast.success("Logged In",{
@@ -107,6 +107,7 @@ const LoginRegister = () => {
         <div className="login-register-login">
           <form className="login-register-form" >
             <label
+            
               htmlFor="login-register-chk"
               className="label"
               aria-hidden="true"
